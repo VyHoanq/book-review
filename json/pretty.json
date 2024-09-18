@@ -1,0 +1,24 @@
+{
+  "id": 1,
+  "author": {
+    "id": 101,
+    "name": "J.K. Rowling"
+  },
+  "category": {
+    "id": 202,
+    "name": "Fantasy"
+  },
+  "publisher": "Bloomsbury Publishing",
+  "description": "A fantasy novel about a young wizard, Harry Potter.",
+  "content": "The content of the book goes here...",
+  "isbn": "978-3-16-148410-0",
+  "resumeReview": "An engaging story about the battle between good and evil.",
+  "reissue": true,
+  "image": "https://res.cloudinary.com/demo/image/upload/v1692591234/book-cover.jpg",
+  "fileDetails": {
+    "size": 2345678,
+    "format": "pdf",
+    "publicId": "sample-book-pdf",
+    "url": "https://res.cloudinary.com/demo/raw/upload/v1692591234/sample-book-pdf.pdf"
+  }
+}

@@ -1,0 +1,117 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum UserRole {
+  ADMIN
+  USER
+  AUTHOR
+  MODERATOR
+}
+
+model Category {
+  id_category Int      @id @default(autoincrement())
+  title       String?  @db.VarChar(255)
+  slug        String?  @unique @db.VarChar(255)
+  imageUrl    String?  @db.VarChar(255)
+  description String?  @db.Text
+  code        String?
+  isActive    Boolean
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  books       Book[]
+}
+
+model Banner {
+  id_banner Int      @id @default(autoincrement())
+  title     String?  @db.VarChar(255)
+  imageUrl  String?  @db.VarChar(255)
+  isActive  Boolean
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Author {
+  id_author       Int      @id @unique @default(autoincrement())
+  name            String?  @db.VarChar(255)
+  biography       String?  @db.VarChar(20)
+  profileImageUrl String?  @db.VarChar(255)
+  isActive        Boolean
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  storyGenre      String?
+  mainGenre       String?
+  user            User     @relation(fields: [id], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  id    Int
+  books Book[]
+}
+
+model Book {
+  id            Int      @id @default(autoincrement())
+  userId        Int
+  id_category   Int
+  slug          String   @unique
+  title         String
+  publisher     String
+  content       String
+  resume_review String
+  imageUrl      String
+  size          String
+  format        String
+  public_id     String
+  isActive      Boolean
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // Relations
+  category        Category  @relation(fields: [id_category], references: [id_category], onDelete: Cascade, onUpdate: Cascade)
+  user            User      @relation(fields: [userId], references: [id])
+  comments        Comment[]
+  Author          Author?   @relation(fields: [authorId_author], references: [id_author])
+  authorId_author Int?
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String?  @unique
+  email     String?  @unique
+  password  String?
+  phone     String?
+  gender    String?
+  age       String?
+  role      UserRole @default(USER)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  books   Book[]
+  Author  Author[]
+  comment Comment[]
+}
+
+model Comment {
+  id          Int       @id @default(autoincrement())
+  title       String
+  content     String
+  imageUrl    String?
+  review_date DateTime?
+  rate        Int?
+
+  userId Int
+  bookId Int
+
+  user User @relation(fields: [userId], references: [id])
+  book Book @relation(fields: [bookId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  bookName String @ignore // Trường này chỉ dùng cho hiển thị, không lưu trong DB
+  userName String @ignore // Trường này chỉ dùng cho hiển thị, không lưu trong DB
+}

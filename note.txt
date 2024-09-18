@@ -1,0 +1,19 @@
+1. Push the models to the DB 
+
+npx prisma generate
+npx prisma migrate dev
+
+
+2. Run the Studio
+npx prisma studio
+
+3. file 
+
+
+model Chapter {
+  id_chapter     Int     @id @default(autoincrement())
+  id_book        Int     @unique
+  content        String?
+  chapter_number String?
+  title          String?
+}

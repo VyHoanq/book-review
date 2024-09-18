@@ -1,0 +1,1622 @@
+[
+  {
+    "id": 1,
+    "author": { "id": 1, "name": "Louis Lempertz" },
+    "category": { "id": 1, "name": "Kylynn De Michetti" },
+    "publisher": "Rubetta Watting",
+    "description": "Integer a nibh. In quis justo.",
+    "content": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor.",
+    "isbn": 1,
+    "resumeReview": "Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
+    "reissue": false,
+    "image": "http://dummyimage.com/192x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "578",
+      "format": "Industrial",
+      "publicId": "Clothing",
+      "url": "opensource.org/erat/quisque/erat/eros/viverra/eget.json"
+    }
+  },
+  {
+    "id": 2,
+    "author": { "id": 2, "name": "Fern Trewett" },
+    "category": { "id": 2, "name": "Findley Jeannenet" },
+    "publisher": "Chrisy Silcox",
+    "description": "In hac habitasse platea dictumst.",
+    "content": "Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.",
+    "isbn": 2,
+    "resumeReview": "Nunc purus.",
+    "reissue": true,
+    "image": "http://dummyimage.com/190x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "39",
+      "format": "Automotive",
+      "publicId": "Outdoors",
+      "url": "sbwire.com/nulla/sed.aspx"
+    }
+  },
+  {
+    "id": 3,
+    "author": { "id": 3, "name": "Andee Shugg" },
+    "category": { "id": 3, "name": "Reinwald Duchart" },
+    "publisher": "Andriana Keems",
+    "description": "Praesent blandit. Nam nulla.",
+    "content": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo.",
+    "isbn": 3,
+    "resumeReview": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.",
+    "reissue": false,
+    "image": "http://dummyimage.com/244x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "2",
+      "format": "Tools",
+      "publicId": "Home",
+      "url": "usa.gov/quam/suspendisse/potenti/nullam/porttitor/lacus.js"
+    }
+  },
+  {
+    "id": 4,
+    "author": { "id": 4, "name": "Sondra Gullivan" },
+    "category": { "id": 4, "name": "Maxi Dakers" },
+    "publisher": "Osborn Matley",
+    "description": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+    "content": "Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "isbn": 4,
+    "resumeReview": "Praesent blandit.",
+    "reissue": true,
+    "image": "http://dummyimage.com/108x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "87",
+      "format": "Health",
+      "publicId": "Tools",
+      "url": "list-manage.com/enim/blandit/mi/in/porttitor/pede/justo.png"
+    }
+  },
+  {
+    "id": 5,
+    "author": { "id": 5, "name": "Graham Stobart" },
+    "category": { "id": 5, "name": "Teddie Pena" },
+    "publisher": "Jaymie Carme",
+    "description": "Curabitur at ipsum ac tellus semper interdum.",
+    "content": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.",
+    "isbn": 5,
+    "resumeReview": "Integer ac leo.",
+    "reissue": false,
+    "image": "http://dummyimage.com/105x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "65",
+      "format": "Grocery",
+      "publicId": "Grocery",
+      "url": "wisc.edu/turpis/integer/aliquet.jsp"
+    }
+  },
+  {
+    "id": 6,
+    "author": { "id": 6, "name": "Ellerey Ortiger" },
+    "category": { "id": 6, "name": "Angelico Poyntz" },
+    "publisher": "Caitrin Pickring",
+    "description": "Aenean sit amet justo. Morbi ut odio.",
+    "content": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.",
+    "isbn": 6,
+    "resumeReview": "Suspendisse ornare consequat lectus.",
+    "reissue": false,
+    "image": "http://dummyimage.com/151x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "78337",
+      "format": "Kids",
+      "publicId": "Games",
+      "url": "google.co.jp/augue.aspx"
+    }
+  },
+  {
+    "id": 7,
+    "author": { "id": 7, "name": "Gabriela Mockford" },
+    "category": { "id": 7, "name": "Elmo McMorran" },
+    "publisher": "Kendrick Ricardet",
+    "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "content": "Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros.",
+    "isbn": 7,
+    "resumeReview": "Suspendisse potenti.",
+    "reissue": true,
+    "image": "http://dummyimage.com/229x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "0167",
+      "format": "Jewelry",
+      "publicId": "Outdoors",
+      "url": "house.gov/ultrices/posuere/cubilia/curae.xml"
+    }
+  },
+  {
+    "id": 8,
+    "author": { "id": 8, "name": "Odelia Telford" },
+    "category": { "id": 8, "name": "Sabra Lindenfeld" },
+    "publisher": "Nikolos Backhouse",
+    "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat.",
+    "content": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis.",
+    "isbn": 8,
+    "resumeReview": "Donec quis orci eget orci vehicula condimentum.",
+    "reissue": true,
+    "image": "http://dummyimage.com/239x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "92",
+      "format": "Home",
+      "publicId": "Beauty",
+      "url": "samsung.com/eu/interdum/eu/tincidunt/in/leo/maecenas.jsp"
+    }
+  },
+  {
+    "id": 9,
+    "author": { "id": 9, "name": "Gabbie Darlasson" },
+    "category": { "id": 9, "name": "Adora Teanby" },
+    "publisher": "Cindee Rubica",
+    "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+    "content": "Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+    "isbn": 9,
+    "resumeReview": "Quisque ut erat.",
+    "reissue": false,
+    "image": "http://dummyimage.com/228x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "98",
+      "format": "Electronics",
+      "publicId": "Grocery",
+      "url": "disqus.com/mi.jsp"
+    }
+  },
+  {
+    "id": 10,
+    "author": { "id": 10, "name": "Lillis Jakubowicz" },
+    "category": { "id": 10, "name": "Joachim O'Heaney" },
+    "publisher": "Onfroi Cordeau",
+    "description": "Suspendisse accumsan tortor quis turpis. Sed ante.",
+    "content": "Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+    "isbn": 10,
+    "resumeReview": "Duis mattis egestas metus.",
+    "reissue": true,
+    "image": "http://dummyimage.com/126x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "2407",
+      "format": "Music",
+      "publicId": "Toys",
+      "url": "quantcast.com/tempor/convallis.png"
+    }
+  },
+  {
+    "id": 11,
+    "author": { "id": 11, "name": "Danni Andrzej" },
+    "category": { "id": 11, "name": "Borden Waterhouse" },
+    "publisher": "Melany Fowkes",
+    "description": "Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
+    "content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum.",
+    "isbn": 11,
+    "resumeReview": "Maecenas tincidunt lacus at velit.",
+    "reissue": false,
+    "image": "http://dummyimage.com/177x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "9875",
+      "format": "Grocery",
+      "publicId": "Clothing",
+      "url": "buzzfeed.com/pellentesque/ultrices/mattis/odio/donec/vitae.aspx"
+    }
+  },
+  {
+    "id": 12,
+    "author": { "id": 12, "name": "Belle Revey" },
+    "category": { "id": 12, "name": "Natalee Kissock" },
+    "publisher": "Madelyn Blum",
+    "description": "Suspendisse potenti.",
+    "content": "Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.",
+    "isbn": 12,
+    "resumeReview": "Phasellus sit amet erat.",
+    "reissue": true,
+    "image": "http://dummyimage.com/110x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "05942",
+      "format": "Baby",
+      "publicId": "Outdoors",
+      "url": "baidu.com/ut/erat/curabitur/gravida/nisi/at.js"
+    }
+  },
+  {
+    "id": 13,
+    "author": { "id": 13, "name": "Sissy Presman" },
+    "category": { "id": 13, "name": "Fidelity Solesbury" },
+    "publisher": "Charita Danat",
+    "description": "Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.",
+    "content": "In sagittis dui vel nisl. Duis ac nibh.",
+    "isbn": 13,
+    "resumeReview": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.",
+    "reissue": false,
+    "image": "http://dummyimage.com/100x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "48",
+      "format": "Electronics",
+      "publicId": "Clothing",
+      "url": "artisteer.com/quam/sapien/varius/ut/blandit.html"
+    }
+  },
+  {
+    "id": 14,
+    "author": { "id": 14, "name": "Koenraad Glowacki" },
+    "category": { "id": 14, "name": "Gaylord Stormont" },
+    "publisher": "Geraldine Wiffill",
+    "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+    "content": "Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+    "isbn": 14,
+    "resumeReview": "Integer ac neque.",
+    "reissue": false,
+    "image": "http://dummyimage.com/101x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "53",
+      "format": "Health",
+      "publicId": "Tools",
+      "url": "gmpg.org/massa/volutpat/convallis/morbi/odio/odio.jpg"
+    }
+  },
+  {
+    "id": 15,
+    "author": { "id": 15, "name": "Vlad Molan" },
+    "category": { "id": 15, "name": "Jerry Henbury" },
+    "publisher": "Faulkner Jansens",
+    "description": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet.",
+    "content": "Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+    "isbn": 15,
+    "resumeReview": "Cras in purus eu magna vulputate luctus.",
+    "reissue": true,
+    "image": "http://dummyimage.com/110x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "2837",
+      "format": "Jewelry",
+      "publicId": "Shoes",
+      "url": "mashable.com/vestibulum/proin/eu/mi/nulla/ac/enim.jpg"
+    }
+  },
+  {
+    "id": 16,
+    "author": { "id": 16, "name": "Kiele Cazereau" },
+    "category": { "id": 16, "name": "Gav Bartelli" },
+    "publisher": "Francene Kimblin",
+    "description": "Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.",
+    "content": "Morbi non quam nec dui luctus rutrum.",
+    "isbn": 16,
+    "resumeReview": "Phasellus in felis.",
+    "reissue": false,
+    "image": "http://dummyimage.com/200x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "6",
+      "format": "Home",
+      "publicId": "Sports",
+      "url": "stanford.edu/tortor/duis/mattis.aspx"
+    }
+  },
+  {
+    "id": 17,
+    "author": { "id": 17, "name": "Lona Ambresin" },
+    "category": { "id": 17, "name": "Toinette Von Oertzen" },
+    "publisher": "Seana Stilling",
+    "description": "Nulla tellus.",
+    "content": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+    "isbn": 17,
+    "resumeReview": "Donec quis orci eget orci vehicula condimentum.",
+    "reissue": false,
+    "image": "http://dummyimage.com/144x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "16374",
+      "format": "Books",
+      "publicId": "Shoes",
+      "url": "reuters.com/massa/volutpat.png"
+    }
+  },
+  {
+    "id": 18,
+    "author": { "id": 18, "name": "Zsazsa Tupman" },
+    "category": { "id": 18, "name": "Garvin Bosomworth" },
+    "publisher": "Ashleigh Pleven",
+    "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+    "content": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
+    "isbn": 18,
+    "resumeReview": "Nullam varius.",
+    "reissue": false,
+    "image": "http://dummyimage.com/222x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "0",
+      "format": "Books",
+      "publicId": "Computers",
+      "url": "amazon.de/penatibus/et/magnis/dis.png"
+    }
+  },
+  {
+    "id": 19,
+    "author": { "id": 19, "name": "Kellie Hanssmann" },
+    "category": { "id": 19, "name": "Gilberte Ahrendsen" },
+    "publisher": "Jodi Cornau",
+    "description": "Praesent lectus.",
+    "content": "Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.",
+    "isbn": 19,
+    "resumeReview": "Duis ac nibh.",
+    "reissue": true,
+    "image": "http://dummyimage.com/121x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "2563",
+      "format": "Music",
+      "publicId": "Sports",
+      "url": "bing.com/nec/condimentum.html"
+    }
+  },
+  {
+    "id": 20,
+    "author": { "id": 20, "name": "Clem Sudron" },
+    "category": { "id": 20, "name": "Maggee Milsted" },
+    "publisher": "Hanna Finkle",
+    "description": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.",
+    "content": "Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis.",
+    "isbn": 20,
+    "resumeReview": "Aenean lectus.",
+    "reissue": true,
+    "image": "http://dummyimage.com/207x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "479",
+      "format": "Kids",
+      "publicId": "Jewelry",
+      "url": "nytimes.com/eget/massa/tempor.xml"
+    }
+  },
+  {
+    "id": 21,
+    "author": { "id": 21, "name": "Sibby Cotes" },
+    "category": { "id": 21, "name": "Graham Hebner" },
+    "publisher": "Conney Keyte",
+    "description": "Suspendisse potenti. In eleifend quam a odio.",
+    "content": "In sagittis dui vel nisl. Duis ac nibh.",
+    "isbn": 21,
+    "resumeReview": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.",
+    "reissue": true,
+    "image": "http://dummyimage.com/152x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "498",
+      "format": "Industrial",
+      "publicId": "Automotive",
+      "url": "etsy.com/aenean/sit.jpg"
+    }
+  },
+  {
+    "id": 22,
+    "author": { "id": 22, "name": "Cori Heaysman" },
+    "category": { "id": 22, "name": "Raimund Samson" },
+    "publisher": "Rozanna Garrick",
+    "description": "Nulla tellus. In sagittis dui vel nisl. Duis ac nibh.",
+    "content": "Vivamus in felis eu sapien cursus vestibulum. Proin eu mi.",
+    "isbn": 22,
+    "resumeReview": "In sagittis dui vel nisl.",
+    "reissue": false,
+    "image": "http://dummyimage.com/220x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "24537",
+      "format": "Movies",
+      "publicId": "Home",
+      "url": "cocolog-nifty.com/ante/ipsum/primis/in/faucibus/orci.png"
+    }
+  },
+  {
+    "id": 23,
+    "author": { "id": 23, "name": "Lelia Dyhouse" },
+    "category": { "id": 23, "name": "Karney Doul" },
+    "publisher": "Poppy Dalgardno",
+    "description": "Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede.",
+    "content": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+    "isbn": 23,
+    "resumeReview": "Integer a nibh.",
+    "reissue": true,
+    "image": "http://dummyimage.com/174x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "04446",
+      "format": "Clothing",
+      "publicId": "Movies",
+      "url": "mapquest.com/dictumst/etiam/faucibus/cursus/urna/ut.jsp"
+    }
+  },
+  {
+    "id": 24,
+    "author": { "id": 24, "name": "Elmira Phoenix" },
+    "category": { "id": 24, "name": "Templeton Checketts" },
+    "publisher": "Prudence Taree",
+    "description": "In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat.",
+    "content": "Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus.",
+    "isbn": 24,
+    "resumeReview": "Pellentesque eget nunc.",
+    "reissue": true,
+    "image": "http://dummyimage.com/209x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "555",
+      "format": "Outdoors",
+      "publicId": "Shoes",
+      "url": "opera.com/tristique.json"
+    }
+  },
+  {
+    "id": 25,
+    "author": { "id": 25, "name": "Jeffrey Simony" },
+    "category": { "id": 25, "name": "Alfred Trowsdall" },
+    "publisher": "Jolyn Rosie",
+    "description": "Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede.",
+    "content": "Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
+    "isbn": 25,
+    "resumeReview": "Donec dapibus.",
+    "reissue": false,
+    "image": "http://dummyimage.com/201x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "55",
+      "format": "Industrial",
+      "publicId": "Books",
+      "url": "fotki.com/velit/eu/est/congue/elementum/in.html"
+    }
+  },
+  {
+    "id": 26,
+    "author": { "id": 26, "name": "Susanne Derrick" },
+    "category": { "id": 26, "name": "Monique Hoggan" },
+    "publisher": "Ryann Harberer",
+    "description": "Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus.",
+    "content": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.",
+    "isbn": 26,
+    "resumeReview": "Maecenas pulvinar lobortis est.",
+    "reissue": false,
+    "image": "http://dummyimage.com/167x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "60966",
+      "format": "Sports",
+      "publicId": "Sports",
+      "url": "xinhuanet.com/vel/ipsum/praesent/blandit.jsp"
+    }
+  },
+  {
+    "id": 27,
+    "author": { "id": 27, "name": "Alane Trelease" },
+    "category": { "id": 27, "name": "Hermy Chipperfield" },
+    "publisher": "Marcel Merrgan",
+    "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
+    "content": "In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "isbn": 27,
+    "resumeReview": "Integer a nibh.",
+    "reissue": false,
+    "image": "http://dummyimage.com/101x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "1869",
+      "format": "Jewelry",
+      "publicId": "Toys",
+      "url": "symantec.com/scelerisque/quam/turpis/adipiscing/lorem/vitae.js"
+    }
+  },
+  {
+    "id": 28,
+    "author": { "id": 28, "name": "Edward Reah" },
+    "category": { "id": 28, "name": "Barbi Durrett" },
+    "publisher": "Barny Pantry",
+    "description": "Nunc rhoncus dui vel sem. Sed sagittis.",
+    "content": "Pellentesque viverra pede ac diam.",
+    "isbn": 28,
+    "resumeReview": "Ut tellus.",
+    "reissue": true,
+    "image": "http://dummyimage.com/108x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "66",
+      "format": "Home",
+      "publicId": "Books",
+      "url": "walmart.com/in/sapien/iaculis/congue/vivamus/metus.xml"
+    }
+  },
+  {
+    "id": 29,
+    "author": { "id": 29, "name": "Belinda Peaurt" },
+    "category": { "id": 29, "name": "Regine Twigg" },
+    "publisher": "Keenan Hannaby",
+    "description": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+    "content": "Aenean sit amet justo.",
+    "isbn": 29,
+    "resumeReview": "Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante.",
+    "reissue": false,
+    "image": "http://dummyimage.com/169x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "96365",
+      "format": "Computers",
+      "publicId": "Movies",
+      "url": "globo.com/nulla/tellus/in/sagittis.json"
+    }
+  },
+  {
+    "id": 30,
+    "author": { "id": 30, "name": "Sargent Maric" },
+    "category": { "id": 30, "name": "Cassi Tilby" },
+    "publisher": "Sig Merrgan",
+    "description": "Nullam sit amet turpis elementum ligula vehicula consequat.",
+    "content": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo.",
+    "isbn": 30,
+    "resumeReview": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.",
+    "reissue": false,
+    "image": "http://dummyimage.com/174x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "78653",
+      "format": "Shoes",
+      "publicId": "Electronics",
+      "url": "indiegogo.com/nunc/purus/phasellus/in.js"
+    }
+  },
+  {
+    "id": 31,
+    "author": { "id": 31, "name": "Rozele Farr" },
+    "category": { "id": 31, "name": "Sawyere Rean" },
+    "publisher": "Jacklin Ingledew",
+    "description": "Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.",
+    "content": "Etiam justo. Etiam pretium iaculis justo.",
+    "isbn": 31,
+    "resumeReview": "Fusce consequat.",
+    "reissue": false,
+    "image": "http://dummyimage.com/212x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "79",
+      "format": "Industrial",
+      "publicId": "Games",
+      "url": "g.co/nulla.js"
+    }
+  },
+  {
+    "id": 32,
+    "author": { "id": 32, "name": "Edlin Sans" },
+    "category": { "id": 32, "name": "Basile Jagiello" },
+    "publisher": "Emeline Founds",
+    "description": "Ut at dolor quis odio consequat varius. Integer ac leo.",
+    "content": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.",
+    "isbn": 32,
+    "resumeReview": "Sed accumsan felis.",
+    "reissue": true,
+    "image": "http://dummyimage.com/208x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "1",
+      "format": "Industrial",
+      "publicId": "Music",
+      "url": "sakura.ne.jp/sit/amet/nulla.aspx"
+    }
+  },
+  {
+    "id": 33,
+    "author": { "id": 33, "name": "Franklyn Grumbridge" },
+    "category": { "id": 33, "name": "Danni Jannex" },
+    "publisher": "Risa Colam",
+    "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat.",
+    "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices.",
+    "isbn": 33,
+    "resumeReview": "Nunc rhoncus dui vel sem.",
+    "reissue": true,
+    "image": "http://dummyimage.com/215x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "4798",
+      "format": "Tools",
+      "publicId": "Automotive",
+      "url": "fda.gov/vestibulum/ante/ipsum/primis/in.js"
+    }
+  },
+  {
+    "id": 34,
+    "author": { "id": 34, "name": "Jemmy Stepney" },
+    "category": { "id": 34, "name": "Dudley Claussen" },
+    "publisher": "Lenard Kelf",
+    "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "content": "Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet.",
+    "isbn": 34,
+    "resumeReview": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.",
+    "reissue": false,
+    "image": "http://dummyimage.com/151x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "35098",
+      "format": "Outdoors",
+      "publicId": "Sports",
+      "url": "fastcompany.com/sodales.html"
+    }
+  },
+  {
+    "id": 35,
+    "author": { "id": 35, "name": "Julee Bareham" },
+    "category": { "id": 35, "name": "Lars Minocchi" },
+    "publisher": "Jolie Trineman",
+    "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+    "content": "Etiam vel augue. Vestibulum rutrum rutrum neque.",
+    "isbn": 35,
+    "resumeReview": "Nulla facilisi.",
+    "reissue": false,
+    "image": "http://dummyimage.com/182x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "66",
+      "format": "Movies",
+      "publicId": "Industrial",
+      "url": "networksolutions.com/quam/pede/lobortis/ligula/sit/amet/eleifend.xml"
+    }
+  },
+  {
+    "id": 36,
+    "author": { "id": 36, "name": "Myrah Tynan" },
+    "category": { "id": 36, "name": "Vic Baistow" },
+    "publisher": "Adam Gilfillan",
+    "description": "In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
+    "content": "Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+    "isbn": 36,
+    "resumeReview": "Fusce consequat.",
+    "reissue": false,
+    "image": "http://dummyimage.com/148x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "51785",
+      "format": "Automotive",
+      "publicId": "Electronics",
+      "url": "mediafire.com/at.js"
+    }
+  },
+  {
+    "id": 37,
+    "author": { "id": 37, "name": "Barnebas Vynehall" },
+    "category": { "id": 37, "name": "Martina Iglesiaz" },
+    "publisher": "Matilde MacDavitt",
+    "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.",
+    "content": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.",
+    "isbn": 37,
+    "resumeReview": "Aliquam non mauris.",
+    "reissue": true,
+    "image": "http://dummyimage.com/155x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "48",
+      "format": "Health",
+      "publicId": "Jewelry",
+      "url": "tinyurl.com/nulla/neque.png"
+    }
+  },
+  {
+    "id": 38,
+    "author": { "id": 38, "name": "Teddi Sweetland" },
+    "category": { "id": 38, "name": "Den Ciccarelli" },
+    "publisher": "Tamma Pallatina",
+    "description": "Praesent blandit.",
+    "content": "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+    "isbn": 38,
+    "resumeReview": "Maecenas pulvinar lobortis est.",
+    "reissue": true,
+    "image": "http://dummyimage.com/122x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "3996",
+      "format": "Toys",
+      "publicId": "Movies",
+      "url": "pinterest.com/ipsum/primis/in/faucibus/orci.jsp"
+    }
+  },
+  {
+    "id": 39,
+    "author": { "id": 39, "name": "Flore Dulanty" },
+    "category": { "id": 39, "name": "Haily Covell" },
+    "publisher": "Demetrius Ferraresi",
+    "description": "In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat.",
+    "content": "Integer non velit.",
+    "isbn": 39,
+    "resumeReview": "Sed accumsan felis.",
+    "reissue": false,
+    "image": "http://dummyimage.com/182x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "8",
+      "format": "Home",
+      "publicId": "Toys",
+      "url": "arizona.edu/potenti/nullam.html"
+    }
+  },
+  {
+    "id": 40,
+    "author": { "id": 40, "name": "Rufus Paulich" },
+    "category": { "id": 40, "name": "Raffaello Lescop" },
+    "publisher": "Shaylyn McGlue",
+    "description": "Praesent id massa id nisl venenatis lacinia.",
+    "content": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
+    "isbn": 40,
+    "resumeReview": "Ut tellus.",
+    "reissue": true,
+    "image": "http://dummyimage.com/146x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "01",
+      "format": "Baby",
+      "publicId": "Automotive",
+      "url": "forbes.com/sapien/ut/nunc/vestibulum/ante/ipsum/primis.html"
+    }
+  },
+  {
+    "id": 41,
+    "author": { "id": 41, "name": "Tuesday Gumbrell" },
+    "category": { "id": 41, "name": "Morgana Ferry" },
+    "publisher": "Hart Rolling",
+    "description": "Vestibulum ac est lacinia nisi venenatis tristique.",
+    "content": "Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.",
+    "isbn": 41,
+    "resumeReview": "Quisque ut erat.",
+    "reissue": false,
+    "image": "http://dummyimage.com/161x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "56",
+      "format": "Jewelry",
+      "publicId": "Garden",
+      "url": "domainmarket.com/nullam/varius/nulla/facilisi/cras/non.jpg"
+    }
+  },
+  {
+    "id": 42,
+    "author": { "id": 42, "name": "Gabriellia Dimelow" },
+    "category": { "id": 42, "name": "Hakeem Sothern" },
+    "publisher": "Janelle Swanton",
+    "description": "Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.",
+    "content": "Nunc purus.",
+    "isbn": 42,
+    "resumeReview": "Cras non velit nec nisi vulputate nonummy.",
+    "reissue": true,
+    "image": "http://dummyimage.com/155x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "363",
+      "format": "Sports",
+      "publicId": "Jewelry",
+      "url": "ed.gov/vivamus/vel/nulla/eget/eros/elementum.png"
+    }
+  },
+  {
+    "id": 43,
+    "author": { "id": 43, "name": "Jeremy Munroe" },
+    "category": { "id": 43, "name": "Paolina Poker" },
+    "publisher": "Salomone De Francisci",
+    "description": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio.",
+    "content": "Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla.",
+    "isbn": 43,
+    "resumeReview": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.",
+    "reissue": true,
+    "image": "http://dummyimage.com/215x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "5777",
+      "format": "Computers",
+      "publicId": "Games",
+      "url": "webs.com/ut.json"
+    }
+  },
+  {
+    "id": 44,
+    "author": { "id": 44, "name": "Philly Alfuso" },
+    "category": { "id": 44, "name": "Tabbie Kettoe" },
+    "publisher": "Gabby Behning",
+    "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+    "content": "Aenean lectus.",
+    "isbn": 44,
+    "resumeReview": "Nam dui.",
+    "reissue": true,
+    "image": "http://dummyimage.com/246x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "7039",
+      "format": "Home",
+      "publicId": "Kids",
+      "url": "independent.co.uk/in/sagittis/dui.png"
+    }
+  },
+  {
+    "id": 45,
+    "author": { "id": 45, "name": "Sybille Potts" },
+    "category": { "id": 45, "name": "Madelina Renton" },
+    "publisher": "Stacy Rulton",
+    "description": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.",
+    "content": "Integer ac neque. Duis bibendum.",
+    "isbn": 45,
+    "resumeReview": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+    "reissue": false,
+    "image": "http://dummyimage.com/218x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "14",
+      "format": "Computers",
+      "publicId": "Home",
+      "url": "narod.ru/ullamcorper/purus/sit/amet/nulla/quisque/arcu.xml"
+    }
+  },
+  {
+    "id": 46,
+    "author": { "id": 46, "name": "Dietrich Flaune" },
+    "category": { "id": 46, "name": "Greta Diggar" },
+    "publisher": "Zorina Joreau",
+    "description": "Vivamus tortor. Duis mattis egestas metus. Aenean fermentum.",
+    "content": "Integer ac leo.",
+    "isbn": 46,
+    "resumeReview": "In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+    "reissue": false,
+    "image": "http://dummyimage.com/243x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "4340",
+      "format": "Baby",
+      "publicId": "Kids",
+      "url": "google.pl/ut.jpg"
+    }
+  },
+  {
+    "id": 47,
+    "author": { "id": 47, "name": "Adora Wakelam" },
+    "category": { "id": 47, "name": "Tedda Harridge" },
+    "publisher": "Karissa Shalloo",
+    "description": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis.",
+    "content": "In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat.",
+    "isbn": 47,
+    "resumeReview": "Vestibulum rutrum rutrum neque.",
+    "reissue": false,
+    "image": "http://dummyimage.com/101x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "06176",
+      "format": "Home",
+      "publicId": "Clothing",
+      "url": "ox.ac.uk/felis/fusce.jpg"
+    }
+  },
+  {
+    "id": 48,
+    "author": { "id": 48, "name": "Emmalee Sanger" },
+    "category": { "id": 48, "name": "Culver Fearnside" },
+    "publisher": "Callida Castangia",
+    "description": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.",
+    "content": "Nunc nisl.",
+    "isbn": 48,
+    "resumeReview": "Integer non velit.",
+    "reissue": true,
+    "image": "http://dummyimage.com/205x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "0",
+      "format": "Clothing",
+      "publicId": "Outdoors",
+      "url": "cisco.com/eros.png"
+    }
+  },
+  {
+    "id": 49,
+    "author": { "id": 49, "name": "Errol Cunnow" },
+    "category": { "id": 49, "name": "Larine Purser" },
+    "publisher": "Gabbie Limbert",
+    "description": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla.",
+    "content": "Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat.",
+    "isbn": 49,
+    "resumeReview": "Integer ac leo.",
+    "reissue": true,
+    "image": "http://dummyimage.com/201x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "11994",
+      "format": "Automotive",
+      "publicId": "Games",
+      "url": "ustream.tv/non/lectus/aliquam/sit/amet/diam/in.jsp"
+    }
+  },
+  {
+    "id": 50,
+    "author": { "id": 50, "name": "Margy Parcell" },
+    "category": { "id": 50, "name": "Myrlene Hatrey" },
+    "publisher": "Axe Kilby",
+    "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.",
+    "content": "Sed ante. Vivamus tortor.",
+    "isbn": 50,
+    "resumeReview": "Sed vel enim sit amet nunc viverra dapibus.",
+    "reissue": false,
+    "image": "http://dummyimage.com/237x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "3",
+      "format": "Health",
+      "publicId": "Tools",
+      "url": "woothemes.com/platea/dictumst/maecenas/ut/massa/quis.jsp"
+    }
+  },
+  {
+    "id": 51,
+    "author": { "id": 51, "name": "Kiah Tayspell" },
+    "category": { "id": 51, "name": "Reynolds Yonge" },
+    "publisher": "Torrin Chillistone",
+    "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "content": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.",
+    "isbn": 51,
+    "resumeReview": "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+    "reissue": true,
+    "image": "http://dummyimage.com/116x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "864",
+      "format": "Grocery",
+      "publicId": "Outdoors",
+      "url": "ehow.com/eget/congue/eget/semper/rutrum.png"
+    }
+  },
+  {
+    "id": 52,
+    "author": { "id": 52, "name": "Duane Lishmund" },
+    "category": { "id": 52, "name": "Glad Endrighi" },
+    "publisher": "Connor Francais",
+    "description": "In quis justo.",
+    "content": "Proin interdum mauris non ligula pellentesque ultrices.",
+    "isbn": 52,
+    "resumeReview": "Suspendisse potenti.",
+    "reissue": true,
+    "image": "http://dummyimage.com/115x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "41220",
+      "format": "Garden",
+      "publicId": "Home",
+      "url": "ucla.edu/magna/ac/consequat.js"
+    }
+  },
+  {
+    "id": 53,
+    "author": { "id": 53, "name": "Phaidra Olanda" },
+    "category": { "id": 53, "name": "Nickolaus Croose" },
+    "publisher": "Mic Matevushev",
+    "description": "Cras non velit nec nisi vulputate nonummy.",
+    "content": "Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+    "isbn": 53,
+    "resumeReview": "Pellentesque eget nunc.",
+    "reissue": true,
+    "image": "http://dummyimage.com/244x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "0",
+      "format": "Grocery",
+      "publicId": "Books",
+      "url": "desdev.cn/nibh/fusce/lacus.html"
+    }
+  },
+  {
+    "id": 54,
+    "author": { "id": 54, "name": "Lindie Lillgard" },
+    "category": { "id": 54, "name": "Norine Swain" },
+    "publisher": "Ebonee Mattingly",
+    "description": "Mauris ullamcorper purus sit amet nulla.",
+    "content": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum.",
+    "isbn": 54,
+    "resumeReview": "Etiam justo.",
+    "reissue": true,
+    "image": "http://dummyimage.com/143x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "56390",
+      "format": "Outdoors",
+      "publicId": "Health",
+      "url": "dmoz.org/luctus/rutrum/nulla.html"
+    }
+  },
+  {
+    "id": 55,
+    "author": { "id": 55, "name": "Vernen Borrell" },
+    "category": { "id": 55, "name": "Zerk Pedlar" },
+    "publisher": "Antone Cormack",
+    "description": "Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla.",
+    "content": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante.",
+    "isbn": 55,
+    "resumeReview": "In eleifend quam a odio.",
+    "reissue": false,
+    "image": "http://dummyimage.com/133x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "2",
+      "format": "Health",
+      "publicId": "Home",
+      "url": "usda.gov/tortor/id/nulla/ultrices.png"
+    }
+  },
+  {
+    "id": 56,
+    "author": { "id": 56, "name": "Donna Troup" },
+    "category": { "id": 56, "name": "Nadiya Pye" },
+    "publisher": "Dun Temblett",
+    "description": "Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit.",
+    "content": "Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.",
+    "isbn": 56,
+    "resumeReview": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "reissue": true,
+    "image": "http://dummyimage.com/189x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "360",
+      "format": "Music",
+      "publicId": "Movies",
+      "url": "nifty.com/libero/quis/orci/nullam/molestie/nibh.aspx"
+    }
+  },
+  {
+    "id": 57,
+    "author": { "id": 57, "name": "Juan Janeway" },
+    "category": { "id": 57, "name": "Kaycee Huxley" },
+    "publisher": "Fulton Bolstridge",
+    "description": "Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus.",
+    "content": "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+    "isbn": 57,
+    "resumeReview": "Aenean auctor gravida sem.",
+    "reissue": false,
+    "image": "http://dummyimage.com/227x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "7",
+      "format": "Grocery",
+      "publicId": "Books",
+      "url": "theguardian.com/in/tempor.jpg"
+    }
+  },
+  {
+    "id": 58,
+    "author": { "id": 58, "name": "Serene Rathbourne" },
+    "category": { "id": 58, "name": "Chick Lehrle" },
+    "publisher": "Dorice Jordeson",
+    "description": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+    "content": "Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+    "isbn": 58,
+    "resumeReview": "Aenean sit amet justo.",
+    "reissue": true,
+    "image": "http://dummyimage.com/135x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "3146",
+      "format": "Baby",
+      "publicId": "Toys",
+      "url": "t-online.de/consequat.json"
+    }
+  },
+  {
+    "id": 59,
+    "author": { "id": 59, "name": "Kelby Gherardelli" },
+    "category": { "id": 59, "name": "Brendis Medeway" },
+    "publisher": "Cecile Schimon",
+    "description": "Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat.",
+    "content": "Nulla nisl.",
+    "isbn": 59,
+    "resumeReview": "Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.",
+    "reissue": false,
+    "image": "http://dummyimage.com/200x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "354",
+      "format": "Clothing",
+      "publicId": "Shoes",
+      "url": "si.edu/pulvinar/sed/nisl/nunc/rhoncus/dui.html"
+    }
+  },
+  {
+    "id": 60,
+    "author": { "id": 60, "name": "Othilie Buckleigh" },
+    "category": { "id": 60, "name": "Raleigh Brychan" },
+    "publisher": "Isabel Tidbald",
+    "description": "In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.",
+    "content": "Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    "isbn": 60,
+    "resumeReview": "Praesent blandit lacinia erat.",
+    "reissue": true,
+    "image": "http://dummyimage.com/103x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "7648",
+      "format": "Music",
+      "publicId": "Automotive",
+      "url": "last.fm/donec/diam/neque/vestibulum/eget.xml"
+    }
+  },
+  {
+    "id": 61,
+    "author": { "id": 61, "name": "Loria Tripcony" },
+    "category": { "id": 61, "name": "Nerissa Halstead" },
+    "publisher": "Avrit Faill",
+    "description": "Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula.",
+    "content": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
+    "isbn": 61,
+    "resumeReview": "Suspendisse ornare consequat lectus.",
+    "reissue": true,
+    "image": "http://dummyimage.com/168x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "8",
+      "format": "Beauty",
+      "publicId": "Computers",
+      "url": "zimbio.com/a/pede/posuere.aspx"
+    }
+  },
+  {
+    "id": 62,
+    "author": { "id": 62, "name": "Rickie Augar" },
+    "category": { "id": 62, "name": "Inna Twatt" },
+    "publisher": "Rebecca Courtenay",
+    "description": "Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim.",
+    "content": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus.",
+    "isbn": 62,
+    "resumeReview": "In congue.",
+    "reissue": true,
+    "image": "http://dummyimage.com/189x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "2182",
+      "format": "Movies",
+      "publicId": "Books",
+      "url": "samsung.com/in/lacus.js"
+    }
+  },
+  {
+    "id": 63,
+    "author": { "id": 63, "name": "Curran Pulford" },
+    "category": { "id": 63, "name": "Marianna Barlow" },
+    "publisher": "Janka Elgey",
+    "description": "Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.",
+    "content": "Proin at turpis a pede posuere nonummy. Integer non velit.",
+    "isbn": 63,
+    "resumeReview": "Morbi porttitor lorem id ligula.",
+    "reissue": false,
+    "image": "http://dummyimage.com/178x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "10",
+      "format": "Movies",
+      "publicId": "Jewelry",
+      "url": "eepurl.com/maecenas/tristique/est/et/tempus.jsp"
+    }
+  },
+  {
+    "id": 64,
+    "author": { "id": 64, "name": "Ally Bramah" },
+    "category": { "id": 64, "name": "Bonni Gilfoy" },
+    "publisher": "Riccardo Cunningham",
+    "description": "Vivamus tortor. Duis mattis egestas metus.",
+    "content": "In hac habitasse platea dictumst.",
+    "isbn": 64,
+    "resumeReview": "Nullam varius.",
+    "reissue": false,
+    "image": "http://dummyimage.com/223x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "05",
+      "format": "Garden",
+      "publicId": "Movies",
+      "url": "mlb.com/vivamus.jpg"
+    }
+  },
+  {
+    "id": 65,
+    "author": { "id": 65, "name": "Filide Elles" },
+    "category": { "id": 65, "name": "Stesha Wilbor" },
+    "publisher": "Rafaello Whyard",
+    "description": "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+    "content": "Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+    "isbn": 65,
+    "resumeReview": "Vivamus vestibulum sagittis sapien.",
+    "reissue": false,
+    "image": "http://dummyimage.com/130x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "190",
+      "format": "Toys",
+      "publicId": "Games",
+      "url": "unblog.fr/nibh/in.png"
+    }
+  },
+  {
+    "id": 66,
+    "author": { "id": 66, "name": "Chantal Voisey" },
+    "category": { "id": 66, "name": "Sibylle Kimblin" },
+    "publisher": "Fedora Ludlam",
+    "description": "Fusce consequat. Nulla nisl.",
+    "content": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.",
+    "isbn": 66,
+    "resumeReview": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+    "reissue": true,
+    "image": "http://dummyimage.com/157x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "096",
+      "format": "Home",
+      "publicId": "Games",
+      "url": "umich.edu/mi/in/porttitor.jpg"
+    }
+  },
+  {
+    "id": 67,
+    "author": { "id": 67, "name": "Christel Fewlass" },
+    "category": { "id": 67, "name": "Uriah Snipe" },
+    "publisher": "Randie Poundesford",
+    "description": "Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.",
+    "content": "Vivamus tortor. Duis mattis egestas metus.",
+    "isbn": 67,
+    "resumeReview": "Vivamus in felis eu sapien cursus vestibulum.",
+    "reissue": true,
+    "image": "http://dummyimage.com/186x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "31",
+      "format": "Kids",
+      "publicId": "Garden",
+      "url": "purevolume.com/maecenas/ut/massa.aspx"
+    }
+  },
+  {
+    "id": 68,
+    "author": { "id": 68, "name": "Lissie Boynton" },
+    "category": { "id": 68, "name": "Bree Filkov" },
+    "publisher": "Jesse Gowanlock",
+    "description": "Suspendisse potenti.",
+    "content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis.",
+    "isbn": 68,
+    "resumeReview": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+    "reissue": false,
+    "image": "http://dummyimage.com/176x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "1",
+      "format": "Industrial",
+      "publicId": "Health",
+      "url": "shutterfly.com/enim/blandit.jpg"
+    }
+  },
+  {
+    "id": 69,
+    "author": { "id": 69, "name": "Cobbie Kobera" },
+    "category": { "id": 69, "name": "Malory Cornilli" },
+    "publisher": "Rebekkah Blant",
+    "description": "Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat.",
+    "content": "Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis.",
+    "isbn": 69,
+    "resumeReview": "Suspendisse ornare consequat lectus.",
+    "reissue": true,
+    "image": "http://dummyimage.com/143x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "974",
+      "format": "Automotive",
+      "publicId": "Outdoors",
+      "url": "google.de/quis.js"
+    }
+  },
+  {
+    "id": 70,
+    "author": { "id": 70, "name": "Marilee Conry" },
+    "category": { "id": 70, "name": "Essa Chugg" },
+    "publisher": "Nadine Foffano",
+    "description": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.",
+    "content": "Morbi non quam nec dui luctus rutrum.",
+    "isbn": 70,
+    "resumeReview": "Ut at dolor quis odio consequat varius.",
+    "reissue": true,
+    "image": "http://dummyimage.com/239x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "21897",
+      "format": "Outdoors",
+      "publicId": "Industrial",
+      "url": "google.pl/at/nunc.aspx"
+    }
+  },
+  {
+    "id": 71,
+    "author": { "id": 71, "name": "Arri Mabbe" },
+    "category": { "id": 71, "name": "Ariadne Maseyk" },
+    "publisher": "Dylan Ramsdale",
+    "description": "Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum.",
+    "content": "Maecenas tincidunt lacus at velit.",
+    "isbn": 71,
+    "resumeReview": "Maecenas pulvinar lobortis est.",
+    "reissue": false,
+    "image": "http://dummyimage.com/190x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "91180",
+      "format": "Tools",
+      "publicId": "Clothing",
+      "url": "cbslocal.com/elementum.jsp"
+    }
+  },
+  {
+    "id": 72,
+    "author": { "id": 72, "name": "Nichole Kilgallen" },
+    "category": { "id": 72, "name": "Aida O' Driscoll" },
+    "publisher": "Jervis Genicke",
+    "description": "Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum.",
+    "content": "Nulla tempus.",
+    "isbn": 72,
+    "resumeReview": "Proin eu mi.",
+    "reissue": true,
+    "image": "http://dummyimage.com/201x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "521",
+      "format": "Kids",
+      "publicId": "Clothing",
+      "url": "tinypic.com/in/faucibus/orci/luctus.jpg"
+    }
+  },
+  {
+    "id": 73,
+    "author": { "id": 73, "name": "Joann Oleszkiewicz" },
+    "category": { "id": 73, "name": "Aubrey Frays" },
+    "publisher": "Boycie Spraging",
+    "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
+    "content": "Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.",
+    "isbn": 73,
+    "resumeReview": "Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl.",
+    "reissue": false,
+    "image": "http://dummyimage.com/250x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "72",
+      "format": "Grocery",
+      "publicId": "Outdoors",
+      "url": "xinhuanet.com/purus/phasellus/in/felis/donec/semper.json"
+    }
+  },
+  {
+    "id": 74,
+    "author": { "id": 74, "name": "Ulrike Stenett" },
+    "category": { "id": 74, "name": "Benoit Buttle" },
+    "publisher": "Halette Zukerman",
+    "description": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+    "content": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
+    "isbn": 74,
+    "resumeReview": "Nullam sit amet turpis elementum ligula vehicula consequat.",
+    "reissue": false,
+    "image": "http://dummyimage.com/132x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "15",
+      "format": "Kids",
+      "publicId": "Tools",
+      "url": "odnoklassniki.ru/tincidunt/nulla/mollis/molestie/lorem/quisque/ut.json"
+    }
+  },
+  {
+    "id": 75,
+    "author": { "id": 75, "name": "Marika Hebdon" },
+    "category": { "id": 75, "name": "Nial Pressey" },
+    "publisher": "Roberta Tuft",
+    "description": "Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh.",
+    "content": "In eleifend quam a odio.",
+    "isbn": 75,
+    "resumeReview": "Cras in purus eu magna vulputate luctus.",
+    "reissue": true,
+    "image": "http://dummyimage.com/237x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "9052",
+      "format": "Music",
+      "publicId": "Books",
+      "url": "marketwatch.com/amet/sapien.html"
+    }
+  },
+  {
+    "id": 76,
+    "author": { "id": 76, "name": "Nicoli Brazener" },
+    "category": { "id": 76, "name": "Kassi Narey" },
+    "publisher": "Nixie Cosham",
+    "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa.",
+    "content": "Phasellus sit amet erat.",
+    "isbn": 76,
+    "resumeReview": "Duis mattis egestas metus.",
+    "reissue": true,
+    "image": "http://dummyimage.com/217x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "9752",
+      "format": "Electronics",
+      "publicId": "Home",
+      "url": "wufoo.com/dolor/vel/est/donec.jsp"
+    }
+  },
+  {
+    "id": 77,
+    "author": { "id": 77, "name": "Angus Rothermel" },
+    "category": { "id": 77, "name": "Tania Bohan" },
+    "publisher": "Dawna Godain",
+    "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+    "content": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.",
+    "isbn": 77,
+    "resumeReview": "Integer ac neque.",
+    "reissue": true,
+    "image": "http://dummyimage.com/222x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "975",
+      "format": "Tools",
+      "publicId": "Books",
+      "url": "ucoz.com/id.png"
+    }
+  },
+  {
+    "id": 78,
+    "author": { "id": 78, "name": "Craggie Tomaino" },
+    "category": { "id": 78, "name": "Jennee Bloodworth" },
+    "publisher": "Mae Baudoux",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "content": "Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis.",
+    "isbn": 78,
+    "resumeReview": "Duis consequat dui nec nisi volutpat eleifend.",
+    "reissue": true,
+    "image": "http://dummyimage.com/139x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "73547",
+      "format": "Automotive",
+      "publicId": "Industrial",
+      "url": "ft.com/rutrum/at/lorem.jpg"
+    }
+  },
+  {
+    "id": 79,
+    "author": { "id": 79, "name": "Estrellita Marcos" },
+    "category": { "id": 79, "name": "Caritta Matic" },
+    "publisher": "Yul Crutchley",
+    "description": "Ut at dolor quis odio consequat varius. Integer ac leo.",
+    "content": "Suspendisse accumsan tortor quis turpis. Sed ante.",
+    "isbn": 79,
+    "resumeReview": "Aenean auctor gravida sem.",
+    "reissue": false,
+    "image": "http://dummyimage.com/238x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "82984",
+      "format": "Jewelry",
+      "publicId": "Games",
+      "url": "sun.com/vestibulum/ante/ipsum/primis/in.html"
+    }
+  },
+  {
+    "id": 80,
+    "author": { "id": 80, "name": "Vickie Falco" },
+    "category": { "id": 80, "name": "Dudley Godar" },
+    "publisher": "Vinnie Arnoud",
+    "description": "Cras non velit nec nisi vulputate nonummy.",
+    "content": "Donec posuere metus vitae ipsum.",
+    "isbn": 80,
+    "resumeReview": "Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
+    "reissue": true,
+    "image": "http://dummyimage.com/181x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "890",
+      "format": "Industrial",
+      "publicId": "Movies",
+      "url": "admin.ch/dignissim/vestibulum/vestibulum.json"
+    }
+  },
+  {
+    "id": 81,
+    "author": { "id": 81, "name": "Darla Maccaig" },
+    "category": { "id": 81, "name": "Lorie Hamlyn" },
+    "publisher": "Lucia Pigden",
+    "description": "Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
+    "content": "Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim.",
+    "isbn": 81,
+    "resumeReview": "In quis justo.",
+    "reissue": true,
+    "image": "http://dummyimage.com/172x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "73659",
+      "format": "Tools",
+      "publicId": "Sports",
+      "url": "wufoo.com/nisi.js"
+    }
+  },
+  {
+    "id": 82,
+    "author": { "id": 82, "name": "Janessa Farrin" },
+    "category": { "id": 82, "name": "Teresina Prattin" },
+    "publisher": "Hamish Kemshell",
+    "description": "Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue.",
+    "content": "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo.",
+    "isbn": 82,
+    "resumeReview": "Quisque porta volutpat erat.",
+    "reissue": false,
+    "image": "http://dummyimage.com/225x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "733",
+      "format": "Computers",
+      "publicId": "Shoes",
+      "url": "bloomberg.com/diam/erat/fermentum/justo.jsp"
+    }
+  },
+  {
+    "id": 83,
+    "author": { "id": 83, "name": "Clarence Bicker" },
+    "category": { "id": 83, "name": "Fan Biddwell" },
+    "publisher": "Hazel Garratty",
+    "description": "Sed vel enim sit amet nunc viverra dapibus.",
+    "content": "In congue. Etiam justo.",
+    "isbn": 83,
+    "resumeReview": "In blandit ultrices enim.",
+    "reissue": false,
+    "image": "http://dummyimage.com/169x100.png/cc0000/ffffff",
+    "fileDetails": {
+      "size": "865",
+      "format": "Electronics",
+      "publicId": "Shoes",
+      "url": "scribd.com/adipiscing/molestie/hendrerit/at/vulputate/vitae.png"
+    }
+  },
+  {
+    "id": 84,
+    "author": { "id": 84, "name": "Raimundo Bisco" },
+    "category": { "id": 84, "name": "Sinclair Sidey" },
+    "publisher": "Ced Huikerby",
+    "description": "Maecenas ut massa quis augue luctus tincidunt.",
+    "content": "Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante.",
+    "isbn": 84,
+    "resumeReview": "Praesent blandit lacinia erat.",
+    "reissue": false,
+    "image": "http://dummyimage.com/215x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "5",
+      "format": "Electronics",
+      "publicId": "Games",
+      "url": "mtv.com/phasellus/in/felis.png"
+    }
+  },
+  {
+    "id": 85,
+    "author": { "id": 85, "name": "Julee Elnor" },
+    "category": { "id": 85, "name": "Suzy Craxford" },
+    "publisher": "Sayres Trace",
+    "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.",
+    "content": "Donec dapibus. Duis at velit eu est congue elementum.",
+    "isbn": 85,
+    "resumeReview": "Aenean auctor gravida sem.",
+    "reissue": false,
+    "image": "http://dummyimage.com/239x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "9",
+      "format": "Baby",
+      "publicId": "Jewelry",
+      "url": "imageshack.us/mi/sit/amet/lobortis/sapien.json"
+    }
+  },
+  {
+    "id": 86,
+    "author": { "id": 86, "name": "Carlyle Nias" },
+    "category": { "id": 86, "name": "Ninette Dusting" },
+    "publisher": "Krishnah Deekes",
+    "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
+    "content": "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+    "isbn": 86,
+    "resumeReview": "Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.",
+    "reissue": false,
+    "image": "http://dummyimage.com/115x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "90",
+      "format": "Electronics",
+      "publicId": "Music",
+      "url": "tripod.com/libero/non/mattis/pulvinar/nulla/pede.jpg"
+    }
+  },
+  {
+    "id": 87,
+    "author": { "id": 87, "name": "Tawnya Haw" },
+    "category": { "id": 87, "name": "Alison Cameron" },
+    "publisher": "Christel Dyer",
+    "description": "Vivamus tortor. Duis mattis egestas metus. Aenean fermentum.",
+    "content": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+    "isbn": 87,
+    "resumeReview": "Nulla ac enim.",
+    "reissue": true,
+    "image": "http://dummyimage.com/245x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "6",
+      "format": "Games",
+      "publicId": "Music",
+      "url": "miitbeian.gov.cn/vestibulum/ac/est/lacinia/nisi/venenatis.aspx"
+    }
+  },
+  {
+    "id": 88,
+    "author": { "id": 88, "name": "Lyndel Routhorn" },
+    "category": { "id": 88, "name": "Liam Loisi" },
+    "publisher": "Raymund Featherby",
+    "description": "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
+    "content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum.",
+    "isbn": 88,
+    "resumeReview": "Maecenas tincidunt lacus at velit.",
+    "reissue": true,
+    "image": "http://dummyimage.com/187x100.png/dddddd/000000",
+    "fileDetails": {
+      "size": "2791",
+      "format": "Games",
+      "publicId": "Clothing",
+      "url": "bizjournals.com/faucibus/orci/luctus.json"
+    }
+  },
+  {
+    "id": 89,
+    "author": { "id": 89, "name": "Bran Winscomb" },
+    "category": { "id": 89, "name": "Ugo Batalle" },
+    "publisher": "Perice Burk",
+    "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci.",
+    "content": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim.",
+    "isbn": 89,
+    "resumeReview": "Phasellus in felis.",
+    "reissue": false,
+    "image": "http://dummyimage.com/159x100.png/5fa2dd/ffffff",
+    "fileDetails": {
+      "size": "85",
+      "format": "Music",
+      "publicId": "Toys",
+      "url": "constantcontact.com/morbi/odio/odio/elementum/eu/interdum/eu.xml"
+    }
+  },
+  {
+    "id": 90,
+    "author": { "id": 90, "name": "Dora Geldart" },
+    "category": { "id": 90, "name": "Salomon Ballister" },
+    "publisher": "Libbey Davis",
+    "description": "Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
+    "content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum.",
+    "isbn": 90,
+    "resumeReview": "Nulla tempus.",
+    "reissue": false,
+    "image": "http://dummyimage.com/242x100.png/ff4444/ffffff",
+    "fileDetails": {
+      "size": "959",
+      "format": "Movies",
+      "publicId": "Electronics",
+      "url": "google.ru/integer.js"
+    }
+  }
+]

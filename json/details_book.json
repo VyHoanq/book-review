@@ -1,0 +1,35 @@
+{
+  "code": 1000,
+  "result": {
+    "publisher": "Adventure Publishing",
+    "title": "The Great Adventure",
+    "description": "An epic fantasy adventure filled with action and mystery.",
+    "resume": "Follow the journey of a young hero as they navigate a world of magic and danger.",
+    "reissue": "2024",
+    "image": "http://example.com/images/the-great-adventure.jpg",
+    "author": [
+      {
+        "name": "Alex",
+        "biography": ""
+      }
+    ],
+    "categories": [
+      {
+        "code": "ACT",
+        "name": "Action",
+        "description": "Action genre, characterized by physical activity, including fights, chases, and explosions."
+      },
+      {
+        "code": "FAN",
+        "name": "Fantasy",
+        "description": "Fantasy genre, typically involving magic and supernatural elements."
+      }
+    ],
+    "chapters": [
+      {
+        "id": "9e31d998-4f42-4e80-a14c-67d392b9c3d9",
+        "title": "Chapter 1: The Beginning"
+      }
+    ]
+  }
+}
