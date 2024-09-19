@@ -2,10 +2,10 @@
 
 import React from "react"
 import { Checkbox } from "@/components/ui/checkbox"
-import ImageColumn from "../../../components/data-column/ImageColumn"
-import DateColumn from "../../../components/data-column/DateColumn"
-import SortTableColumn from '../../../components/data-column/SortTableColumn'
-import ActionColumn from '../../../components/data-column/ActionColumn'
+import ImageColumn from "@/app/components/data-column/ImageColumn"
+import DateColumn from "@/app/components/data-column/DateColumn"
+import SortTableColumn from '@/app/components/data-column/SortTableColumn'
+import ActionColumn from '@/app/components/data-column/ActionColumn'
 
 export const columns = [
     {
@@ -64,7 +64,14 @@ export const columns = [
         id: "actions",
         cell: ({ row }) => {
             const category = row.original
-            return (<ActionColumn row={row} title="Category" endpoint={`categories/${category.id_category}`} />)
+            return (
+                <ActionColumn
+                    row={row}
+                    title="Category"
+                    editEndpoint={`categories/updated/${category.id_category}`}
+                    endpoint={`categories/${category.id_category}`}
+                />
+            )
         }
     },
 ]

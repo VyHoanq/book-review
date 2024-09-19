@@ -5,12 +5,10 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import Swal from "sweetalert2";
 
-export default function DeleteBtn({ id, endpoint, title }) {
+export default function DeleteBtn({ endpoint, title }) {
     const [loading, setLoading] = useState(false);
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
     const router = useRouter();
-    console.log(endpoint)
-    // const confirmed = confirm("Are you sure?");
     async function handleDelete() {
         setLoading(true);
         Swal.fire({
@@ -24,11 +22,10 @@ export default function DeleteBtn({ id, endpoint, title }) {
         }).then(async (result) => {
             //localhost:3000/api/categories/1
             if (result.isConfirmed) {
-                console.log("Yes have been Clicked")
                 const res = await fetch(`${baseUrl}/api/${endpoint}`, {
                     method: "DELETE"
                 })
-                
+
                 console.log(res);
                 if (res.ok) {
                     router.refresh();
@@ -36,7 +33,6 @@ export default function DeleteBtn({ id, endpoint, title }) {
                     toast.success(`${title} Delete Successfully`);
                 }
             } else {
-                console.log("No")
                 setLoading(false);
             }
         });

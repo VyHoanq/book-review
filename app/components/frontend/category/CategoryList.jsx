@@ -11,8 +11,11 @@ export default function CategoryList({ category }) {
                 <Link className='bg-gray-600 text-slate-50 rounded-md px-4 py-2 hover:bg-gray-900 duration-300 transition-all' href="#">See All</Link>
             </div>
             <div className='bg-white dark:bg-slate-700 p-4'>
-
-                <CategoryCarousel books={category.books} />
+                {category.books && category.books.length > 0 ? (
+                    <CategoryCarousel books={category.books} />
+                ) : (
+                    <p>No books available</p>
+                )}
             </div>
         </div>
     )

@@ -1,6 +1,7 @@
+'use client'
+import React from 'react'
 import { X } from 'lucide-react'
 import { useRouter } from 'next/navigation'
-import React from 'react'
 
 export default function FormHeader({ title }) {
     const router = useRouter()

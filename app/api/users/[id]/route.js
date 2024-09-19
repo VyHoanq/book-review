@@ -5,7 +5,7 @@ export async function GET(request, { params }) {
     try {
         // const userId = parseInt(id, 10);
         const userId = parseInt(params.id);
-        
+
 
         const user = await db.user.findUnique({
             where: { id: userId },
@@ -26,3 +26,32 @@ export async function GET(request, { params }) {
         }, { status: 500 });
     }
 }
+
+
+export async function DELETE(request, { params }) {
+    try {
+        const userId = parseInt(params.id, 10); // Sửa đổi
+        const existingUser = await db.user.findUnique({
+            where: { id: userId }
+        });
+        
+        if (!existingUser) {
+            return NextResponse.json({
+                data: null,
+                message: "User Not Found"
+            }, { status: 404 });
+        }
+
+        const deletedUser = await db.user.delete({
+            where: { id: userId }
+        });
+
+        return NextResponse.json(deletedUser);
+    } catch (error) {
+        return NextResponse.json({
+            message: "Failed to Delete User",
+            error: error.message
+        }, { status: 500 });
+    }
+}
+

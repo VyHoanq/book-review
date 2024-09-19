@@ -8,7 +8,7 @@ export async function POST(request) {
         const newStaff = {
             title, password,email, phone, nin, dob,notes, isActive
         }
-        console.log(newStaff)
+
         return NextResponse.json(newStaff)
     } catch (error) {
         console.log(error)

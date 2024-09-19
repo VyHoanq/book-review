@@ -2,23 +2,23 @@
 
 import React, { useState } from 'react'
 import dynamic from 'next/dynamic';
-import FormHeader from '@/app/components/backoffice/model/FormHeader'
-import TextInput from '@/app/components/FormInputs/input/TextInput'
-import SubmitButton from '@/app/components/FormInputs/SubmitButton'
-import ImageInput from '@/app/components/FormInputs/input/ImageInput'
 import { useForm } from 'react-hook-form'
-import { makePostRequest } from '../../../../lib/apiRequest'
-import SelectInput from '../../FormInputs/input/SelectInput'
-import ToggleInput from '../../FormInputs/input/ToggleInput'
-import StarRating from '../StarRating';
 import { useRouter } from 'next/navigation'
+import { makePostRequest, makePutRequest } from '../../../../lib/apiRequest'
+import SubmitButton from '@/app/components/FormInputs/SubmitButton'
+import StarRating from '../StarRating';
+import { TextInput, ImageInput, SelectInput, ToggleInput } from '@/app/components/FormInputs/input'
 
 const QuillEditor = dynamic(() => import('../../FormInputs/QuillEditor'), {
     ssr: false,
 });
 
-export default function NewFeedbackForm({ books, users }) {
-    const [imageUrl, setImageUrl] = useState("")
+export default function NewFeedbackForm({ books, users, updateData = {} }) {
+    const initialImageUrl = updateData?.imageUrl ?? ""
+    const initialContent = updateData?.content ?? ""
+    const id = updateData?.id ?? ""
+    const [imageUrl, setImageUrl] = useState(initialImageUrl)
+    const [content, setContent] = useState(initialContent)
     const [loading, setLoading] = useState(false)
 
     const { register, reset, handleSubmit, formState: { errors }, watch, setValue } = useForm(
@@ -26,12 +26,12 @@ export default function NewFeedbackForm({ books, users }) {
             defaultValues: {
                 isActive: true,
                 bookId: "",
-                userId: ""
+                userId: "",
+                ...updateData
             },
         }
     )
 
-    const [content, setContent] = useState('')
     const router = useRouter()
     const isActive = watch("isActive")
     function redirect() {
@@ -39,30 +39,34 @@ export default function NewFeedbackForm({ books, users }) {
     }
 
     async function onSubmit(data) {
-
         data.imageUrl = imageUrl
         data.content = content
-        if (!data.userId) {
-            console.error('User ID is missing');
-            return;
+        if (id) {
+            data.id = id
+            makePutRequest(
+                setLoading,
+                `api/feedbacks/${id}`,
+                data,
+                "Feedback",
+                reset,
+                redirect
+            )
+        } else {
+            makePostRequest(
+                setLoading,
+                "api/feedbacks",
+                data,
+                "Feedback",
+                reset,
+                redirect
+            );
+            setImageUrl("")
+            setContent("")
         }
-        console.log(data)
-        makePostRequest(
-            setLoading,
-            "api/feedbacks",
-            data,
-            "Feedback",
-            reset,
-            redirect
-        );
-        setImageUrl("")
-        setContent("")
     }
 
     return (
-        <div>
-            <FormHeader title="New Feedback" />
-            <form
+        <form
                 onSubmit={handleSubmit(onSubmit)}
                 className='w-full max-w-4xl p-4 border  border-gray-200 rounded-lg shadow sm:p-6 md:p-8 drak:bg-gray-800 dark:border-gray-700 mx-auto mt-12 my-3'
             >
@@ -72,7 +76,6 @@ export default function NewFeedbackForm({ books, users }) {
                         name="title"
                         register={register}
                         errors={errors}
-                        className='w-full'
                     />
                     <SelectInput
                         label="Select Books"
@@ -129,9 +132,8 @@ export default function NewFeedbackForm({ books, users }) {
                 </div>
                 <SubmitButton
                     isLoading={loading}
-                    buttonTitle="Feedback"
-                    loadingButtonTitle="Creating feedback please wait ..." />
+                    buttonTitle={id ? "Updated Feedback" : "Create Feedback"}
+                    loadingButtonTitle={`${id ? "Updated" : "Create"} Feedback please wait ...`} />
             </form>
-        </div>
     )
 }

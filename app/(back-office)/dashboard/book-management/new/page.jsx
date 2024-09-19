@@ -1,7 +1,9 @@
 
 import React from 'react'
-import NewBookForm from '../../../../components/backoffice/forms/NewBookForm'
-import { getData } from '../../../../../lib/getData'
+import NewBookForm from '@/app/components/backoffice/forms/NewBookForm'
+import { getData } from '@/lib/getData'
+import FormHeader from '@/app/components/backoffice/model/FormHeader'
+
 export default async function NewBook() {
     const categoriesData = await getData("categories")
     const usersData = await getData("users")
@@ -18,9 +20,13 @@ export default async function NewBook() {
             name: author.name
         }
     })
-
-    console.log(authors)
     return (
-        <NewBookForm categories={categories} authors={authors} />
+        <div>
+            <FormHeader title="New Book" />
+            <NewBookForm
+                categories={categories}
+                authors={authors}
+            />
+        </div>
     )
 }

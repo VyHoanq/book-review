@@ -4,8 +4,6 @@ import db from "../../../lib/db";
 export async function POST(request) {
     try {
         const { title, imageUrl, isActive } = await request.json();
-        console.log('Request Data:', { title, imageUrl, isActive });
-
         if (!db.banner) {
             throw new Error('Banner model is not defined in the db object');
         }
@@ -17,7 +15,6 @@ export async function POST(request) {
                 isActive
             }
         });
-        console.log('New Banner:', newBanner);
         return NextResponse.json(newBanner);
     } catch (error) {
         console.error('Error creating banner:', error);

@@ -10,16 +10,17 @@ import { getData } from "@/lib/getData"
 
 export default async function Home() {
   const categories = await getData("categories");
-
   return (
     <div className=" min-h-screen">
       <Hero />
       <AuthorList />
-      {categories && categories.map((category, i) => (
-        <div className="py-8" key={i}>
-          <CategoryList category={category} />
-        </div>
-      ))}
+      {categories.map((category, i) => {
+        return (
+          <div className="py-8" key={i}>
+            <CategoryList category={category} />
+          </div>
+        )
+      })}
       <div className="py-8">
         <Feedbacking />
       </div>

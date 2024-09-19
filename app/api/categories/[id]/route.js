@@ -24,6 +24,7 @@ export async function GET(request, { params: { id } }) {
 
 export async function DELETE(request, { params: { id } }) {
     try {
+
         const existingCategory = await db.category.findUnique({
             where: {
                 id_category: parseInt(id),
@@ -46,5 +47,37 @@ export async function DELETE(request, { params: { id } }) {
             message: "Failed to Delete Category",
             error
         }, { status: 500 });
+    }
+}
+
+export async function PUT(request) {
+    try {
+        const data = await request.json();
+        const existingCategory = await db.category.findUnique({
+            where: { id_category: data.id_category }
+        })
+        if (!existingCategory) {
+            return NextResponse.json({
+                data: null,
+                message: "Not Found"
+            }, { status: 404 })
+        }
+        const updatedCategory = await db.category.update({
+            where: { id_category: data.id_category },
+            data: {
+                title: data.title,
+                slug: data.slug,
+                imageUrl: data.imageUrl,
+                description: data.description,
+                isActive: data.isActive,
+            },
+        })
+        return NextResponse.json(updatedCategory)
+    } catch (error) {
+        console.log(error)
+        return NextResponse.json({
+            message: "Failed to updated category",
+            error
+        }, { status: 500 })
     }
 }

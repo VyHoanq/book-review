@@ -13,7 +13,7 @@ export default async function Page() {
       {/* Header  */}
       <PageHeader title='Authors' href="/dashboard/authors/new" linkTitle="Add Author" />
       <div className='py-0 text-slate-950 dark:text-slate-50'>
-        <DataTable data={authors} columns={columns} />
+        <DataTable data={authors} columns={columns} filterKeys={["name"]}  />
         {/* Table */}
       </div>
 

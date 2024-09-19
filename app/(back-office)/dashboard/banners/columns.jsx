@@ -54,7 +54,12 @@ export const columns = [
         id: "actions",
         cell: ({ row }) => {
             const banner = row.original
-            return (<ActionColumn row={row} title="Banner" endpoint={`banners/${banner.id_banner}`} />)
+            return (
+            <ActionColumn 
+            row={row} 
+            title="Banner" 
+            editEndpoint={`banners/updated/${banner.id_banner}`}
+            endpoint={`banners/${banner.id_banner}`} />)
         }
     },
 ]

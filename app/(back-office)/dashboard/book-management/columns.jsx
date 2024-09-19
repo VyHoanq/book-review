@@ -52,6 +52,14 @@ export const columns = [
     },
     {
         id: "actions",
-        cell: ({ row }) => (<ActionColumn row={row} title="Book" />)
+        cell: ({ row }) => {
+            const book = row.original
+            return (
+            <ActionColumn 
+            row={row} 
+            title="Book" 
+            editEndpoint={`book-management/updated/${book.id}`}
+            endpoint={`books/${book.id}`} />)
+        }
     },
 ]

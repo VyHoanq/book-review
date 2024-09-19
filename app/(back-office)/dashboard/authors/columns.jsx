@@ -58,10 +58,13 @@ export const columns = [
     {
         accessorKey: "createdAt",
         header: "Date Created",
-        cell: ({ row }) => (<DateColumn row={row} accessorKey= "createdAt" />)
+        cell: ({ row }) => (<DateColumn row={row} accessorKey="createdAt" />)
     },
     {
         id: "actions",
-        cell: ({ row }) => (<ActionColumn row={row} title="Author" />)
+        cell: ({ row }) => {
+            const author = row.original
+            return (<ActionColumn row={row} title="Author" endpoint={`authors/${author.is_author}`} />)
+        }
     },
 ]

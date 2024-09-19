@@ -21,16 +21,15 @@ export async function POST(request) {
         user: { connect: { id: parseInt(userId) } },
       },
       include: {
-        book: true, // Include book details
-        user: true, // Include user details
+        book: true, 
+        user: true, 
       },
     });
 
-    console.log(newFeedback);
     return NextResponse.json({
       ...newFeedback,
-      bookName: newFeedback.book.name, // Assuming `Book` model has `name` field
-      userName: newFeedback.user.name, // Assuming `User` model has `name` field
+      bookName: newFeedback.book.name, 
+      userName: newFeedback.user.name, 
     });
   } catch (error) {
     console.log(error);
