@@ -14,7 +14,7 @@ export default function Navbar() {
             <div className='flex items-center justify-between py-3 max-w-7xl mx-auto px-8 gap-8'>
 
                 <Link className='' href='/'>
-                    <Image src={logo} alt='BrimBook' className='w-24' />
+                    <Image src={logo} alt='BrimBook' className='w-36' />
                 </Link>
                 <div className='flex-grow'>
                     <SearchForm />

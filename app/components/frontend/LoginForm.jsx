@@ -67,14 +67,6 @@ export default function LoginForm() {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-
-            {/* <TextInput
-                label="Your Name"
-                name="name"
-                register={register}
-                errors={errors}
-                className="sm:col-span-2 mb-3"
-            /> */}
             <TextInput
                 label="Email Address"
                 name="email"
@@ -103,7 +95,7 @@ export default function LoginForm() {
                 Don&apos;t have an account?
                 <Link
                     href="/register"
-                    className="font-medium text-purple-600 hover:underline dark:text-purple-500"
+                    className="font-bold text-purple-600 hover:underline dark:text-purple-500"
                 >
                     Register
                 </Link>

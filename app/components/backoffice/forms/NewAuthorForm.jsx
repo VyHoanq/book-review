@@ -26,7 +26,7 @@ export default function NewAuthorForm({ user }) {
     const router = useRouter()
     const isActive = watch("isActive")
     function redirect() {
-        router.push("/dashboard/authors")
+        router.push("/login")
     }
 
     async function onSubmit(data) {

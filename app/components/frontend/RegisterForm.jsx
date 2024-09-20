@@ -1,6 +1,5 @@
 "use client";
 
-
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -39,13 +38,11 @@ export default function RegisterForm({ role = "USER" }) {
                 setLoading(false);
                 toast.success("User Created Successfully");
                 reset();
-                // router.push("/login");
                 if (role === "USER") {
                     router.push("/")
                 } else {
-                    // router.push(`/onboarding/${responseData.data.id}`)
                     const userId = responseData.data.id;
-                    router.push(`/onboarding/${userId}`);
+                    router.push("/verify-email");
                 }
             } else {
                 setLoading(false);
@@ -100,28 +97,6 @@ export default function RegisterForm({ role = "USER" }) {
                 type="password"
                 className="sm:col-span-2 mb-3"
             />
-            <TextInput
-                label="Phone"
-                name="phone"
-                register={register}
-                errors={errors}
-                type="tel"
-                className="sm:col-span-2 mb-3"
-            />
-            <TextInput
-                label="Gender"
-                name="gender"
-                register={register}
-                errors={errors}
-                className="sm:col-span-2 mb-3"
-            />
-            <TextInput
-                label="Age"
-                name="age"
-                register={register}
-                errors={errors}
-                className="sm:col-span-2 mb-3"
-            />
 
             <SubmitButton
                 isLoading={loading}
@@ -129,15 +104,36 @@ export default function RegisterForm({ role = "USER" }) {
                 loadingButtonTitle="Creating Please wait..."
             />
 
-            <p className="text-sm font-light text-gray-500 dark:text-gray-400 py-4">
-                Already have an account?{" "}
-                <Link
-                    href="/login"
-                    className="font-medium text-purple-600 hover:underline dark:text-purple-500"
-                >
-                    Login
-                </Link>
-            </p>
+            <div className="flex gap-11 justify-between">
+                <p className="text-[0.7rem] font-light text-gray-500 dark:text-gray-400 py-4">
+                    Already have an account?{" "}
+                    <Link
+                        href="/login"
+                        className="font-bold text-purple-700 hover:underline dark:text-purple-500"
+                    >
+                        Login
+                    </Link>
+                </p>
+                {role === "USER" ? (
+                    <p className="text-[0.7rem] font-light text-gray-500 dark:text-gray-400 py-4">
+                        Are you a Author?{" "}
+                        <Link
+                            href="/register-author"
+                            className="font-bold text-purple-600 hover:underline dark:text-purple-500"
+                        >
+                            Register Here
+                        </Link>
+                    </p>
+                ) : <p className="text-[0.7rem] font-light text-gray-500 dark:text-gray-400 py-4">
+                    Are you a User?{" "}
+                    <Link
+                        href="/register"
+                        className="font-bold text-purple-600 hover:underline dark:text-purple-500"
+                    >
+                        Register Here
+                    </Link>
+                </p>}
+            </div>
         </form>
     );
 }

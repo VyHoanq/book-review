@@ -20,7 +20,6 @@ model Category {
   slug        String?  @unique @db.VarChar(255)
   imageUrl    String?  @db.VarChar(255)
   description String?  @db.Text
-  code        String?
   isActive    Boolean
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
@@ -78,21 +77,28 @@ model Book {
 }
 
 model User {
-  id        Int      @id @default(autoincrement())
-  name      String?  @unique
-  email     String?  @unique
-  password  String?
-  phone     String?
-  gender    String?
-  age       String?
-  role      UserRole @default(USER)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id                Int      @id @default(autoincrement())
+  name              String? 
+  email             String?  @unique
+  emailVefidied     Boolean  @default(false)
+  password          String?
+  role              UserRole @default(USER)
+  verificationToken String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
 
   // Relations
   books   Book[]
   Author  Author[]
   comment Comment[]
+  profile UserProfile[]
+}
+
+model UserProfile {
+  id          Int      @id @default(autoincrement())
+  userId      Int      @unique
+  dateOfBirth DateTime
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Comment {

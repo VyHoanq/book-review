@@ -6,7 +6,6 @@ import TextInput from '@/app/components/FormInputs/input/TextInput'
 import SubmitButton from '@/app/components/FormInputs/SubmitButton'
 import TextareaInput from '@/app/components/FormInputs/input/TextAreaInput'
 import { useForm } from 'react-hook-form'
-import generateAuthor from '../../../../../lib/generateAuthor'
 import { makePostRequest } from '../../../../../lib/apiRequest'
 
 
@@ -21,8 +20,7 @@ export default function NewStaff() {
     )
     const isActive = watch("isActive")
     async function onSubmit(data) {
-        const code = generateAuthor("SF", data.name)
-        data.code = code
+
         console.log(data)
         makePostRequest(
             setLoading,

@@ -7,7 +7,7 @@ export default function Layout({ children }) {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow max-w-7xl mx-auto py-6 px-8 lg:px-0">
+      <main className="flex-grow max-w-6xl mx-auto px-8 lg:px-0">
         {children}
       </main>
       <Footer />

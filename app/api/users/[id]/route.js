@@ -1,9 +1,8 @@
 import { NextResponse } from "next/server";
-import db from "../../../../lib/db";
+import db from "@/lib/db";
 
 export async function GET(request, { params }) {
     try {
-        // const userId = parseInt(id, 10);
         const userId = parseInt(params.id);
 
 

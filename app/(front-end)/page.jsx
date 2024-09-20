@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import Link from "next/link"
 import Hero from '../components/frontend/sidebar/Hero'
 import AuthorList from '../components/frontend/author/AuthorList'
 import CategoryList from '../components/frontend/category/CategoryList'
@@ -24,11 +23,6 @@ export default async function Home() {
       <div className="py-8">
         <Feedbacking />
       </div>
-      <h2 className="text-4xl">Welcom Home Review Book</h2>
-      <Link
-        className="my-4 underline"
-        href="/register-author">
-        Become a author</Link>
     </div>
   );
 }
