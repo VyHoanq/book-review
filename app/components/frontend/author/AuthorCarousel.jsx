@@ -45,22 +45,20 @@ export default function AuthorCarousel({ authors }) {
             itemClass="px-4"
         >
             {
-                authors.map((author, index) => {
+                Array.isArray(authors) ? authors.map((author, index) => {
                     return (
-                        <div key={index} className='rounded-lg mr-3 bg-white px-4 overflow-hidden  dark:bg-slate-900'>
-                            <Link key={index}
-                                href='#'
-                                className='rounded-lg mr-2 bg-red-400'>
-                                <Image src={author.profileImageUrl} alt={author.name} width={556} height={556} className='w-full rounded-3xl  h-48' />
+                        <div key={index} className='rounded-lg mr-3 bg-white px-4 overflow-hidden dark:bg-slate-900'>
+                            <Link href='#' className='rounded-lg mr-2 bg-red-400'>
+                                <Image src={author.profileImageUrl} alt={author.name} width={556} height={556} className='w-full rounded-3xl h-48' />
                             </Link>
                             <Link href="#">
-                                <h2 className='text-center dark:text-slate-50 text-slate-800 mt-2 '>{author.name}</h2>
-
+                                <h2 className='text-center dark:text-slate-50 text-slate-800 mt-2'>{author.name}</h2>
                             </Link>
-
                         </div>
                     )
-                })
+                }) : (
+                    <div className="text-center">No authors available</div>
+                )
             }
         </Carousel>
     )

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import AuthorCarousel from './AuthorCarousel'
 import { getData } from '@/lib/getData'

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import LoginForm from "../../components/frontend/LoginForm";
 
 export default function Login() {

@@ -1,5 +1,5 @@
-import NewAuthorForm from "../../../components/backoffice/forms/NewAuthorForm";
-import { getData } from '../../../../lib/getData';
+import NewAuthorForm from "@/app/components/backoffice/forms/NewAuthorForm";
+import { getData } from '@/lib/getData';
 import React from "react";
 
 export default async function page({ params }) {
