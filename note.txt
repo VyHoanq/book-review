@@ -6,6 +6,7 @@ npx prisma db push
 
 npx prisma studio
 
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'));"
 
 model Chapter {
   id_chapter     Int     @id @default(autoincrement())

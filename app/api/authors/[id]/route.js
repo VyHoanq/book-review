@@ -3,15 +3,13 @@ import db from "@/lib/db";
 
 export async function GET(request, { params }) {
     try {
-        // const userId = parseInt(id, 10);
-        const id_author = parseInt(params.id);
-
+        const id_author = parseInt(params.id, 10);
 
         const author = await db.author.findUnique({
             where: { id_author },
             include: {
-                books: true,  // Include books if the author has any
-                user: true    // Include related user info if needed
+                books: true,
+                user: true
             }
         });
 
@@ -21,15 +19,16 @@ export async function GET(request, { params }) {
             }, { status: 404 });
         }
 
-        return NextResponse.json(user);
+        return NextResponse.json(author); // Sửa lại từ user thành author
     } catch (error) {
-        console.log(error);
+        console.error('Error fetching author:', error);
         return NextResponse.json({
-            message: "Failed to fetch User",
+            message: "Failed to fetch author",
             error: error.message,
         }, { status: 500 });
     }
 }
+
 export async function DELETE(request, { params }) {
     try {
         const id_author = parseInt(params.id, 10);
@@ -40,8 +39,9 @@ export async function DELETE(request, { params }) {
 
         return NextResponse.json(deletedAuthor);
     } catch (error) {
+        console.error('Error deleting author:', error);
         return NextResponse.json({
-            message: "Failed to Delete Author",
+            message: "Failed to delete author",
             error: error.message
         }, { status: 500 });
     }

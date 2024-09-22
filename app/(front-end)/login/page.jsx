@@ -1,9 +1,9 @@
 import React from "react";
-import LoginForm from "../../components/frontend/LoginForm";
+import LoginForm from "@/components/frontend/LoginForm";
 
 export default function Login() {
   return (
-    <section className="">
+    <section className="min-h-screen py-10 px-10">
       <div className="flex flex-col items-center justify-center px-6 pt-8 mx-auto  lg:py-0">
         <div className="w-full bg-white rounded-lg shadow-xl dark:border md:mt-4 sm:max-w-md xl:max-w-lg xl:p-8 dark:bg-gray-800 dark:border-gray-700">
           <div className="p-4 space-y-4 md:space-y-6 sm:p-8">

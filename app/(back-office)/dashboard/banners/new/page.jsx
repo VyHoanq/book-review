@@ -1,5 +1,5 @@
-import FormHeader from '@/app/components/backoffice/model/FormHeader'
-import NewBannerForm from '@/app/components/backoffice/forms/NewBannerForm'
+import FormHeader from '@/components/backoffice/model/FormHeader'
+import NewBannerForm from '@/components/backoffice/forms/NewBannerForm'
 
 export default function NewBanner() {
 

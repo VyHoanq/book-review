@@ -2,9 +2,9 @@
 
 import React from "react"
 import { Checkbox } from "@/components/ui/checkbox"
-import DateColumn from "../../../components/data-column/DateColumn"
-import SortTableColumn from "../../../components/data-column/SortTableColumn"
-import ActionColumn from "../../../components/data-column/ActionColumn"
+import DateColumn from "@/components/data-column/DateColumn"
+import SortTableColumn from "@/components/data-column/SortTableColumn"
+import ActionColumn from "@/components/data-column/ActionColumn"
 
 export const columns = [
     {

@@ -1,6 +1,6 @@
 
-import NewCategoryForm from "@/app/components/backoffice/forms/NewCategoryForm";
-import FormHeader from '@/app/components/backoffice/model/FormHeader'
+import NewCategoryForm from "@/components/backoffice/forms/NewCategoryForm";
+import FormHeader from '@/components/backoffice/model/FormHeader'
 
 export default function NewCategory() {
   return (

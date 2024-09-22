@@ -38,17 +38,17 @@ model Banner {
 model Author {
   id_author       Int      @id @unique @default(autoincrement())
   name            String?  @db.VarChar(255)
-  biography       String?  @db.VarChar(20)
+  biography       String?  @db.Text
   profileImageUrl String?  @db.VarChar(255)
   isActive        Boolean
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
   storyGenre      String?
   mainGenre       String?
-  user            User     @relation(fields: [id], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
 
-  id    Int
-  books Book[]
+  userId Int
+  books  Book[]
 }
 
 model Book {
@@ -78,9 +78,9 @@ model Book {
 
 model User {
   id                Int      @id @default(autoincrement())
-  name              String? 
+  name              String?
   email             String?  @unique
-  emailVefidied     Boolean  @default(false)
+  emailVerified     Boolean  @default(false)
   password          String?
   role              UserRole @default(USER)
   verificationToken String?
@@ -88,10 +88,10 @@ model User {
   updatedAt         DateTime @updatedAt
 
   // Relations
-  books   Book[]
-  Author  Author[]
-  comment Comment[]
-  profile UserProfile[]
+  books    Book[]
+  authors  Author[] // Sửa lại "Author" thành "authors" để dễ đọc
+  comments Comment[] // Sửa lại "comment" thành "comments"
+  profile  UserProfile[]
 }
 
 model UserProfile {

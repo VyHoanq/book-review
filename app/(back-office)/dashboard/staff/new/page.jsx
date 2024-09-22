@@ -1,10 +1,10 @@
 'use client'
 
 import React, { useState } from 'react'
-import FormHeader from '@/app/components/backoffice/model/FormHeader'
-import TextInput from '@/app/components/FormInputs/input/TextInput'
-import SubmitButton from '@/app/components/FormInputs/SubmitButton'
-import TextareaInput from '@/app/components/FormInputs/input/TextAreaInput'
+import FormHeader from '@/components/backoffice/model/FormHeader'
+import TextInput from '@/components/FormInputs/input/TextInput'
+import SubmitButton from '@/components/FormInputs/SubmitButton'
+import TextareaInput from '@/components/FormInputs/input/TextAreaInput'
 import { useForm } from 'react-hook-form'
 import { makePostRequest } from '../../../../../lib/apiRequest'
 

@@ -1,8 +1,6 @@
-'use client'
-
 import React from 'react'
-import FormHeader from '@/app/components/backoffice/model/FormHeader'
-import NewAuthorForm from '../../../../components/backoffice/forms/NewAuthorForm'
+import FormHeader from '@/components/backoffice/model/FormHeader'
+import NewAuthorForm from '@/components/backoffice/forms/NewAuthorForm'
 
 
 export default function NewAuthor() {

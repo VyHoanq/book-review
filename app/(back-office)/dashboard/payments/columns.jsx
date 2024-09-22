@@ -13,8 +13,8 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import DateColumn from "../../../components/data-column/DateColumn"
-import ActionColumn from "../../../components/data-column/ActionColumn"
+import DateColumn from "@/components/data-column/DateColumn"
+import ActionColumn from "@/components/data-column/ActionColumn"
 
 export const columns = [
     {
@@ -60,7 +60,7 @@ export const columns = [
             const imageUrl = row.getValue("imageUrl")
             return (
                 <div className="shrink-0">
-                    <Image src={imageUrl} className="w-24 h-24 rounded-full object-cover" width={556} height={556} />
+                    <Image src={imageUrl} alt="test" className="w-24 h-24 rounded-full object-cover" width={556} height={556} />
                 </div>
             )
         },

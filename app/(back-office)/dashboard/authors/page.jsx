@@ -1,8 +1,8 @@
 
 import React from 'react'
-import DataTable from '../../../components/data-table/DataTable'
+import DataTable from '@/components/data-table/DataTable'
 import { columns } from './columns'
-import { getData } from '../../../../lib/getData'
+import { getData } from '@/lib/getData'
 
 export default async function Page() {
   const authors = await getData("authors")

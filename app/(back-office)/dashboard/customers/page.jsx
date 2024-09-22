@@ -1,7 +1,7 @@
 
 import React from 'react'
-import DataTable from '../../../components/data-table/DataTable'
-import { getData } from '../../../../lib/getData'
+import DataTable from '@/components/data-table/DataTable'
+import { getData } from '@/lib/getData'
 import { columns } from './columns'
 
 export default async function Page() {

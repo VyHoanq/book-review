@@ -1,6 +1,6 @@
 import React from 'react'
-import NewBookForm from '@/app/components/backoffice/forms/NewBookForm'
-import FormHeader from '@/app/components/backoffice/model/FormHeader'
+import NewBookForm from '@/components/backoffice/forms/NewBookForm'
+import FormHeader from '@/components/backoffice/model/FormHeader'
 import { getData } from '@/lib/getData'
 
 export default async function UpdatedBook({ params: { id } }) {

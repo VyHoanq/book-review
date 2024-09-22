@@ -1,8 +1,8 @@
 
-import PageHeader from '@/app/components/backoffice/model/PageHeader'
+import PageHeader from '@/components/backoffice/model/PageHeader'
 import React from 'react';
-import DataTable from '../../../components/data-table/DataTable';
-import { getData } from '../../../../lib/getData';
+import DataTable from '@/components/data-table/DataTable';
+import { getData } from '@/lib/getData';
 import { columns } from './columns';
 
 export default async function Page() {

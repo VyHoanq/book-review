@@ -1,8 +1,8 @@
 
 import React from 'react'
-import NewFeedbackForm from '@/app/components/backoffice/forms/NewFeedbackForm'
+import NewFeedbackForm from '@/components/backoffice/forms/NewFeedbackForm'
 import { getData } from '@/lib/getData'
-import FormHeader from '@/app/components/backoffice/model/FormHeader'
+import FormHeader from '@/components/backoffice/model/FormHeader'
 
 export default async function NewFeedback() {
 

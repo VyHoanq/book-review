@@ -1,24 +1,34 @@
 import { NextResponse } from "next/server";
-import db from '@/lib/db'
+import db from '@/lib/db';
 
 export async function POST(request) {
     try {
         const authorData = await request.json();
+        console.log('Author Data:', authorData); // In ra để kiểm tra
 
-        // Kiểm tra người dùng tồn tại
+        // Kiểm tra xem userId có tồn tại trong authorData không
+        if (!authorData.id_user) {
+            return NextResponse.json({
+                data: null,
+                message: "User ID is required"
+            }, { status: 400 });
+        }
+
         const existingUser = await db.user.findUnique({
-            where: { id: authorData.userId },
+            where: { id: authorData.id_user },
         });
+
+        // Kiểm tra nếu không tìm thấy user
         if (!existingUser) {
             return NextResponse.json({
                 data: null,
                 message: "No User Found"
-            }, { status: 409 });
+            }, { status: 404 }); // Sử dụng 404 để rõ ràng hơn
         }
 
-        // Cập nhật emailVerified
+        // Cập nhật emailVerified cho user
         await db.user.update({
-            where: { id: authorData.userId },
+            where: { id: authorData.id_user  },
             data: { emailVerified: true },
         });
 
@@ -27,18 +37,13 @@ export async function POST(request) {
                 name: authorData.name,
                 biography: authorData.biography,
                 profileImageUrl: authorData.profileImageUrl || "",
-                isActive: authorData.isActive,
+                isActive: authorData.isActive ?? true,  // Nếu không có isActive, mặc định là true
                 storyGenre: authorData.storyGenre,
                 mainGenre: authorData.mainGenre,
-                user: { connect: { id: authorData.userId } },
-                books: authorData.books && Array.isArray(authorData.books) ? {
+                user: { connect: { id: authorData.id_user  } },
+                books: Array.isArray(authorData.books) ? {
                     create: authorData.books.map(book => ({
                         title: book.title,
-                        content: book.content,
-                        slug: book.slug,
-                        id_category: book.id_category,
-                        userId: authorData.userId,
-                        isActive: book.isActive,
                     }))
                 } : undefined,
             }
@@ -49,34 +54,27 @@ export async function POST(request) {
         console.error('Error creating author:', error);
         return NextResponse.json({
             message: "Failed to create author",
-            error
+            error: error.message 
         }, { status: 500 });
     }
 }
-export async function GET(request, { params }) {
-    try {
-        const id_author = parseInt(params.id, 10);
 
-        const author = await db.author.findUnique({
-            where: { id_author },
+
+export async function GET(request) {
+    try {
+        const authors = await db.author.findMany({
             include: {
                 books: true,
                 user: true,
             }
         });
 
-        if (!author) {
-            return NextResponse.json({
-                message: "Author not found",
-            }, { status: 404 });
-        }
-
-        return NextResponse.json(author);
+        return NextResponse.json(authors);
     } catch (error) {
+        console.error('Error fetching authors:', error);
         return NextResponse.json({
-            message: "Failed to fetch Author",
-            error: error.message,
+            message: "Failed to fetch authors",
+            error: error.message
         }, { status: 500 });
     }
 }
-

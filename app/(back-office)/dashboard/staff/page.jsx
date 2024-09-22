@@ -1,5 +1,5 @@
-import PageHeader from '@/app/components/backoffice/model/PageHeader'
-import TableActions from '@/app/components/backoffice/cards/TableActions'
+import PageHeader from '@/components/backoffice/model/PageHeader'
+import TableActions from '@/components/backoffice/cards/TableActions'
 import React from 'react'
 
 export default function page() {

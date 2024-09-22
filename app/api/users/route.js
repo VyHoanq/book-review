@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 import { v4 as uuidv4 } from "uuid"
 import base64url from "base64url";
 import { Resend } from "resend";
-import { EmailTemplate } from '@/app/components/email/email-template'
+import { EmailTemplate } from '@/components/email/email-template'
 
 export async function POST(request) {
     try {
@@ -46,11 +46,13 @@ export async function POST(request) {
             const userId = newUser.id
             const linkText = "Verify Account"
             const redirectUrl = `onboarding/${userId}?token=${token}`
+            const description = "Thank you, for Creating an Account with Us. We request you to click on the link Below in order to Complete your onboarding process. Thankyou"
+            const subject = "Account Verigication - Limi Ecommerce"
             const sendMail = await resend.emails.send({
                 from: 'Your Name <onboarding@yourdomain.com>', // Thay bằng domain đã xác thực,
                 to: email, // Địa chỉ email của người nhận
-                subject: 'Account Verification - BrimBook',
-                react: EmailTemplate({ name, redirectUrl, linkText })
+                subject: subject,
+                react: EmailTemplate({ name, redirectUrl, linkText, description, subject })
             })
             console.log(sendMail)
         }

@@ -1,6 +1,6 @@
 import React from 'react'
-import FormHeader from '@/app/components/backoffice/model/FormHeader'
-import NewFeedbackForm from '@/app/components/backoffice/forms/NewFeedbackForm'
+import FormHeader from '@/components/backoffice/model/FormHeader'
+import NewFeedbackForm from '@/components/backoffice/forms/NewFeedbackForm'
 import { getData } from '@/lib/getData'
 
 

@@ -2,10 +2,10 @@
 
 import React from "react"
 import { Checkbox } from "@/components/ui/checkbox"
-import SortTableColumn from "../../../components/data-column/SortTableColumn"
-import ImageColumn from "../../../components/data-column/ImageColumn"
-import DateColumn from "../../../components/data-column/DateColumn"
-import ActionColumn from "../../../components/data-column/ActionColumn"
+import SortTableColumn from "@/components/data-column/SortTableColumn"
+import ImageColumn from "@/components/data-column/ImageColumn"
+import DateColumn from "@/components/data-column/DateColumn"
+import ActionColumn from "@/components/data-column/ActionColumn"
 
 export const columns = [
     {
@@ -64,7 +64,7 @@ export const columns = [
         id: "actions",
         cell: ({ row }) => {
             const author = row.original
-            return (<ActionColumn row={row} title="Author" endpoint={`authors/${author.is_author}`} />)
+            return (<ActionColumn row={row} title="Author" endpoint={`authors/${author.id_author}`} />)
         }
     },
 ]

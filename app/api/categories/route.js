@@ -10,60 +10,58 @@ export async function POST(request) {
             where: {
                 slug
             }
-        })
+        });
         if (existingCategory) {
             return NextResponse.json({
                 data: null,
-                message: "Category aready exists"
+                message: "Category already exists"
             }, {
                 status: 409,
                 headers: {
                     'Cache-Control': 'no-store',
                 }
-            })
+            });
         }
 
         const newCategory = await db.category.create({
             data: { title, slug, imageUrl, description, isActive }
-        })
+        });
         return NextResponse.json(newCategory, {
             headers: {
                 'Cache-Control': 'no-store',
             }
-        })
+        });
     } catch (error) {
-        console.log(error)
+        console.log(error);
         return NextResponse.json({
-            message: "Failded to create Category",
+            message: "Failed to create category",
             error
-        }, { status: 500 })
+        }, { status: 500 });
     }
 }
 
 export async function GET(request) {
     try {
-        const categories = await db.category.findMany(
-            {
-                orderBy: {
-                    createdAt: "desc"
-                },
-                include: {
-                    books: true
-                }
+        const categories = await db.category.findMany({
+            orderBy: {
+                createdAt: "desc"
+            },
+            include: {
+                books: true
             }
-        );
+        });
         return NextResponse.json(categories, {
             headers: {
                 'Cache-Control': 'no-store',
             }
-        })
+        });
     } catch (error) {
         return NextResponse.json(
             {
-                message: "Faild to Fetch Categories",
+                message: "Failed to fetch categories",
                 error
             }, { status: 500 }
-        )
+        );
     }
 }
 
