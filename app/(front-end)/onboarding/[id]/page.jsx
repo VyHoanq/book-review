@@ -8,7 +8,7 @@ export default async function page({ params }) {
         const user = await getData(`/users/${id}`);
 
         return (
-            <div className="flex flex-col gap-6 p-2">
+            <div className="flex flex-col items-center justify-center px-6 pt-8 mx-auto  lg:py-0">
                 <div className="max-w-4xl p-4 mx-auto">
                     <h2>Information Author {user?.name}</h2>
                 </div>

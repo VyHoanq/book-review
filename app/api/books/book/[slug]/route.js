@@ -14,6 +14,19 @@ export async function GET(request, { params: { slug } }) {
                             name: true, // Lấy tên người dùng từ userId
                         },
                     },
+                    genres: true,
+                    Author: true,
+                    comments: {
+                        select: {
+                            title: true,
+                            content: true,
+                            imageUrl: true,
+                            review_date: true,
+                            rate: true,
+                            userId: true, // Thông tin người dùng để kết nối
+                            bookId: true
+                        }
+                    }
                 },
             }
         );
@@ -80,14 +93,14 @@ export async function PUT(request, { params: { id } }) {
                 id_category: data.id_category,
                 slug: data.slug,
                 title: data.title,
-                publisher: data.publisher,
                 content: data.content,
-                resume_review: data.resume_review,
                 imageUrl: data.imageUrl,
-                size: data.size,
+                published: data.published,
+                language: data.language,
                 format: data.format,
-                public_id: data.public_id,
+                isbn: data.isbn,
                 isActive: data.isActive,
+                authorName: data.authorName
             },
         })
         return NextResponse.json(updatedBook)

@@ -40,7 +40,7 @@ export default function UserAvt({ user = {} }) {
                         image ?
                             <Image src="/avt.jpg" alt='User profile' width={200} height={200} className='w-8 h-8 rounded-full' />
                             : (
-                                <div className='w-8 h-8 p-2 flex items-center justify-center rounded-full bg-slate-900 shadow-md border border-slate-700'>
+                                <div className='w-10 h-10 p-2 flex items-center justify-center rounded-full bg-slate-50 dark:bg-slate-800 shadow-md border border-slate-700'>
                                     {initials}
                                 </div>
                             )

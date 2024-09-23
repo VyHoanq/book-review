@@ -7,13 +7,15 @@ import { makePostRequest, makePutRequest } from '@/lib/apiRequest'
 import { generateSlug } from '@/lib/generateSlug'
 import SubmitButton from '@/components/FormInputs/SubmitButton'
 import { TextInput, TextareaInput, ImageInput, SelectInput, ToggleInput } from '@/components/FormInputs/input';
+import ArrayItemsInput from '@/components/FormInputs/input/ArrayItemsInput'
+
 
 export default function NewBookForm({ categories, authors, updateData = {} }) {
     const initialImageUrl = updateData?.imageUrl ?? ""
     const id = updateData?.id ?? ""
     const [imageUrl, setImageUrl] = useState(initialImageUrl)
     const [loading, setLoading] = useState(false)
-
+    const [genres, setGenres] = useState([]);
     const { register, reset, handleSubmit, formState: { errors }, watch } = useForm(
         {
             defaultValues: {
@@ -35,7 +37,7 @@ export default function NewBookForm({ categories, authors, updateData = {} }) {
         const slug = generateSlug(data.title)
         data.slug = slug
         data.imageUrl = imageUrl
-
+        data.genres = genres
         if (id) {
             data.id = id
             await makePutRequest(
@@ -88,30 +90,29 @@ export default function NewBookForm({ categories, authors, updateData = {} }) {
                     register={register}
                     errors={errors}
                 />
-                <TextInput
-                    label="Publisher"
-                    name="publisher"
-                    register={register}
-                    errors={errors}
-                    className='w-full'
-                />
-                <TextInput
-                    label="Resume Review"
-                    name="resume_review"
-                    register={register}
-                    errors={errors}
-                    className='w-full'
-                />
                 <TextareaInput
                     label="Content"
                     name="content"
                     register={register}
                     errors={errors}
-                    className='w-full'
                 />
                 <TextInput
+                    label="Author More"
+                    name="authorName"
+                    register={register}
+                    errors={errors}
+                />
+                <TextInput
+                    label="Published"
+                    name="published"
+                    register={register}
+                    errors={errors}
+                    className='w-full'
+                />
+                
+                <TextInput
                     label="ISBN"
-                    name="public_id"
+                    name="isbn"
                     register={register}
                     errors={errors}
                     className='w-full'
@@ -122,9 +123,14 @@ export default function NewBookForm({ categories, authors, updateData = {} }) {
                     endpoint='bookImageUploader'
                     label="Book Image"
                 />
+                <ArrayItemsInput
+                    items={genres}
+                    setItems={setGenres}
+                    itemTitle="Genre"
+                />
                 <TextInput
                     label="Language"
-                    name="size"
+                    name="language"
                     register={register}
                     errors={errors}
                     className='w-full'

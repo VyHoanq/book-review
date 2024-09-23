@@ -4,9 +4,8 @@ import db from '@/lib/db';
 export async function POST(request) {
     try {
         const authorData = await request.json();
-        console.log('Author Data:', authorData); // In ra để kiểm tra
+        console.log('Author Data:', authorData); 
 
-        // Kiểm tra xem userId có tồn tại trong authorData không
         if (!authorData.id_user) {
             return NextResponse.json({
                 data: null,
@@ -18,15 +17,13 @@ export async function POST(request) {
             where: { id: authorData.id_user },
         });
 
-        // Kiểm tra nếu không tìm thấy user
         if (!existingUser) {
             return NextResponse.json({
                 data: null,
                 message: "No User Found"
-            }, { status: 404 }); // Sử dụng 404 để rõ ràng hơn
+            }, { status: 404 }); 
         }
 
-        // Cập nhật emailVerified cho user
         await db.user.update({
             where: { id: authorData.id_user  },
             data: { emailVerified: true },
@@ -37,7 +34,7 @@ export async function POST(request) {
                 name: authorData.name,
                 biography: authorData.biography,
                 profileImageUrl: authorData.profileImageUrl || "",
-                isActive: authorData.isActive ?? true,  // Nếu không có isActive, mặc định là true
+                isActive: authorData.isActive ?? true,
                 storyGenre: authorData.storyGenre,
                 mainGenre: authorData.mainGenre,
                 user: { connect: { id: authorData.id_user  } },

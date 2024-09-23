@@ -6,7 +6,6 @@ import CategoryList from '@/components/frontend/category/CategoryList';
 import Feedbacking from '@/components/frontend/feedback/Feedbacking';
 import { getData } from '@/lib/getData';
 
-// Đây là một client component, không có async
 export default async function HomeClient() {
   const categories = await getData("categories");
   return (

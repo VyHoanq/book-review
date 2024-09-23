@@ -8,18 +8,20 @@ export async function POST(request) {
             id_category,
             slug,
             title,
-            publisher,
             content,
-            resume_review,
             imageUrl,
-            size,
+            published,
+            language,
             format,
-            public_id,
-            isActive
+            isbn,
+            isActive,
+            authorName, genres
         } = await request.json()
 
+        // Phân tích cú pháp ID thành số nguyên
         const parsedIdUser = parseInt(userId, 10);
-        const parsedCategoryId = parseInt(id_category, 10)
+        const parsedCategoryId = parseInt(id_category, 10);
+
         const user = await db.user.findUnique({ where: { id: parsedIdUser } });
         const category = await db.category.findUnique({ where: { id_category: parsedCategoryId } });
 
@@ -30,29 +32,37 @@ export async function POST(request) {
         if (!category) {
             throw new Error('Category not found');
         }
+
+        // Tạo sách với các ID đã phân tích cú pháp
         const newBook = await db.book.create({
             data: {
-                    userId: parsedIdUser, 
-                    id_category: parsedCategoryId,
-                    slug,
-                    title,
-                    publisher,
-                    content,
-                    resume_review,
-                    imageUrl,
-                    size,
-                    format,
-                    public_id,
-                    isActive
-                }
-        })
-        return NextResponse.json(newBook)
+                userId: parsedIdUser,  // Sử dụng ID đã phân tích cú pháp
+                id_category: parsedCategoryId,  // Sử dụng ID đã phân tích cú pháp
+                slug,
+                title,
+                content,
+                imageUrl,
+                published,
+                language,
+                format,
+                isbn,
+                isActive,
+                authorName,
+                genres: {
+                    connectOrCreate: genres.map(genre => ({
+                        where: { name: genre }, // Kết nối hoặc tạo genre mới
+                        create: { name: genre }, // Tạo genre mới nếu không tồn tại
+                    })),
+                },
+            }
+        });
+
+        return NextResponse.json(newBook);
     } catch (error) {
         console.log(error);
         return NextResponse.json(
             {
-                error,
-                message: "Server Error: Something went wrong",
+                error: error.message || "Server Error: Something went wrong",
             },
             { status: 500 }
         );
@@ -61,20 +71,34 @@ export async function POST(request) {
 
 export async function GET(request) {
     try {
-        const books = await db.book.findMany(
-            {
-                orderBy: {
-                    createdAt: "desc"
+        const books = await db.book.findMany({
+            include: {
+                genres: true,// Bao gồm genres trong kết quả
+                Author: true,
+                comments: {
+                    select: {
+                        title: true,
+                        content: true,
+                        imageUrl: true,
+                        review_date: true,
+                        rate: true,
+                        userId: true, // Thông tin người dùng để kết nối
+                        bookId: true
+                    }
                 }
+            },
+            orderBy: {
+                createdAt: "desc"
             }
-        );
-        return NextResponse.json(books)
+        });
+        return NextResponse.json(books);
     } catch (error) {
         return NextResponse.json(
             {
-                message: "Faild to Fetch books",
-                error
-            }, { status: 500 }
-        )
+                message: "Failed to Fetch books",
+                error: error.message || "Error occurred"
+            },
+            { status: 500 }
+        );
     }
 }

@@ -15,15 +15,16 @@ enum UserRole {
 }
 
 model Category {
-  id_category Int      @id @default(autoincrement())
-  title       String?  @db.VarChar(255)
-  slug        String?  @unique @db.VarChar(255)
-  imageUrl    String?  @db.VarChar(255)
-  description String?  @db.Text
-  isActive    Boolean
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id_category Int     @id @default(autoincrement())
+  title       String? @db.VarChar(255)
+  slug        String? @unique @db.VarChar(255)
+  imageUrl    String? @db.VarChar(255)
+  description String? @db.Text
   books       Book[]
+
+  isActive  Boolean
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Banner {
@@ -52,26 +53,27 @@ model Author {
 }
 
 model Book {
-  id            Int      @id @default(autoincrement())
-  userId        Int
-  id_category   Int
-  slug          String   @unique
-  title         String
-  publisher     String
-  content       String
-  resume_review String
-  imageUrl      String
-  size          String
-  format        String
-  public_id     String
-  isActive      Boolean
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
+  id          Int      @id @default(autoincrement())
+  userId      Int
+  id_category Int
+  slug        String   @unique
+  title       String
+  content     String?  @db.Text
+  imageUrl    String
+  published   String
+  language    String
+  format      String
+  isbn        String
+  isActive    Boolean
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 
   // Relations
+  genres          Genre[]   @relation("BookGenres")
   category        Category  @relation(fields: [id_category], references: [id_category], onDelete: Cascade, onUpdate: Cascade)
   user            User      @relation(fields: [userId], references: [id])
   comments        Comment[]
+  authorName      String
   Author          Author?   @relation(fields: [authorId_author], references: [id_author])
   authorId_author Int?
 }
@@ -89,8 +91,8 @@ model User {
 
   // Relations
   books    Book[]
-  authors  Author[] // Sửa lại "Author" thành "authors" để dễ đọc
-  comments Comment[] // Sửa lại "comment" thành "comments"
+  authors  Author[]
+  comments Comment[]
   profile  UserProfile[]
 }
 
@@ -118,6 +120,12 @@ model Comment {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  bookName String @ignore // Trường này chỉ dùng cho hiển thị, không lưu trong DB
-  userName String @ignore // Trường này chỉ dùng cho hiển thị, không lưu trong DB
+  bookName String @ignore
+  userName String @ignore
+}
+
+model Genre {
+  id    Int    @id @default(autoincrement())
+  name  String @unique
+  books Book[] @relation("BookGenres")
 }

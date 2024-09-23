@@ -23,12 +23,19 @@
 }
 
 h1,
-h2,
 h3,
-h4,
+
 h5 {
   font-family: "Copernicus", "Libre Baskerville", Georgia, serif;
+  font-weight: 600;
 }
+h2, 
+h4,span,
+button {
+  font-family: "Copernicus", "Libre Baskerville", Georgia, serif;
+  font-weight: 400;
+}
+
 p {
   font-size: 1rem;
   font-family: "Proxima Nova", Montserrat, Arial, sans-serif;
