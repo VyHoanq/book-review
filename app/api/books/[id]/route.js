@@ -19,7 +19,8 @@ export async function GET(request, { params: { id } }) {
                         userId: true, // Thông tin người dùng để kết nối
                         bookId: true
                     }
-                }
+                },
+                images:true
             },
         });
 

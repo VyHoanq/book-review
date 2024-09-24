@@ -6,8 +6,7 @@ import { useForm } from 'react-hook-form'
 import { makePostRequest, makePutRequest } from '@/lib/apiRequest'
 import { generateSlug } from '@/lib/generateSlug'
 import SubmitButton from '@/components/FormInputs/SubmitButton'
-import { TextInput, TextareaInput, ImageInput, SelectInput, ToggleInput } from '@/components/FormInputs/input';
-import ArrayItemsInput from '@/components/FormInputs/input/ArrayItemsInput'
+import { TextInput, TextareaInput, SelectInput, ToggleInput, MultiImageInput, ArrayItemsInput } from '@/components/FormInputs/input';
 
 
 export default function NewBookForm({ categories, authors, updateData = {} }) {
@@ -16,6 +15,8 @@ export default function NewBookForm({ categories, authors, updateData = {} }) {
     const [imageUrl, setImageUrl] = useState(initialImageUrl)
     const [loading, setLoading] = useState(false)
     const [genres, setGenres] = useState([]);
+    const [bookImages, setBookImages] = useState([])
+    console.log(bookImages)
     const { register, reset, handleSubmit, formState: { errors }, watch } = useForm(
         {
             defaultValues: {
@@ -36,7 +37,7 @@ export default function NewBookForm({ categories, authors, updateData = {} }) {
     async function onSubmit(data) {
         const slug = generateSlug(data.title)
         data.slug = slug
-        data.imageUrl = imageUrl
+        data.bookImages = bookImages
         data.genres = genres
         if (id) {
             data.id = id
@@ -50,7 +51,7 @@ export default function NewBookForm({ categories, authors, updateData = {} }) {
             )
             console.log("Updated book data:", data)
         } else {
-            await makePostRequest(
+            makePostRequest(
                 setLoading,
                 "api/books",
                 data,
@@ -58,7 +59,7 @@ export default function NewBookForm({ categories, authors, updateData = {} }) {
                 reset,
                 redirect
             )
-            setImageUrl("")
+            setBookImages([])
         }
     }
 
@@ -109,7 +110,7 @@ export default function NewBookForm({ categories, authors, updateData = {} }) {
                     errors={errors}
                     className='w-full'
                 />
-                
+
                 <TextInput
                     label="ISBN"
                     name="isbn"
@@ -117,12 +118,13 @@ export default function NewBookForm({ categories, authors, updateData = {} }) {
                     errors={errors}
                     className='w-full'
                 />
-                <ImageInput
-                    imageUrl={imageUrl}
-                    setImageUrl={setImageUrl}
-                    endpoint='bookImageUploader'
-                    label="Book Image"
+                <MultiImageInput
+                    imageUrls={bookImages}
+                    setImageUrls={setBookImages}
+                    endpoint='multiBooksUploader'
+                    label="MultiBook Image"
                 />
+
                 <ArrayItemsInput
                     items={genres}
                     setItems={setGenres}

@@ -3,20 +3,18 @@
 import React, { useState } from 'react'
 import TextInput from '@/components/FormInputs/input/TextInput'
 import SubmitButton from '@/components/FormInputs/SubmitButton'
-import ToggleInput from '@/components/FormInputs/input/ToggleInput'
 import { useForm } from 'react-hook-form'
 import ImageInput from '@/components/FormInputs/input/ImageInput'
-import { makePostRequest } from '@/lib/apiRequest'
+import { makePutRequest } from '@/lib/apiRequest'
 import { useRouter } from 'next/navigation'
-import ArrayItemsInput from '@/components/FormInputs/input/ArrayItemsInput'
 
 export default function NewCustomerForm({ user }) {
+    console.log(user)
     const [profileImageUrl, setProfileImageUrl] = useState("")
     const [loading, setLoading] = useState(false)
     const { register, reset, handleSubmit, formState: { errors }, watch } = useForm(
         {
             defaultValues: {
-                isActive: true,
                 ...user
             },
         }
@@ -25,21 +23,19 @@ export default function NewCustomerForm({ user }) {
     const router = useRouter()
     const isActive = watch("isActive")
     function redirect() {
-        router.push("/login")
+        router.push("/dashboard/customers")
     }
 
     async function onSubmit(data) {
 
         data.profileImageUrl = profileImageUrl
-        data.book = book
         data.id_user = user.id
         console.log(data)
-        makePostRequest(
+        makePutRequest(
             setLoading,
-            "api/authors",
+            `api/customers/${user.id}`,
             data,
-            "Author Profile",
-            reset,
+            "Customers Profile",
             redirect
         )
         setProfileImageUrl("")
@@ -56,15 +52,8 @@ export default function NewCustomerForm({ user }) {
             </h2>
             <div className='grid gap-4 sm:gap-6 sm:grid-cols-2'>
                 <TextInput
-                    label="Full Name"
-                    name="fullName"
-                    register={register}
-                    errors={errors}
-                    className="w-full"
-                />
-                <TextInput
-                    label="User Name"
-                    name="userName"
+                    label="Name"
+                    name="name"
                     register={register}
                     errors={errors}
                     className="w-full"
@@ -84,15 +73,16 @@ export default function NewCustomerForm({ user }) {
                     className="w-full"
                 />
                 <TextInput
-                    label="Email Address"
-                    name="email"
+                    label="Date Of Birth"
+                    name="dateOfBirth"
+                    type="date"
                     register={register}
                     errors={errors}
                     className="w-full"
                 />
                 <TextInput
-                    label="Phone Number"
-                    name="tel"
+                    label="Email Address"
+                    name="email"
                     register={register}
                     errors={errors}
                     className="w-full"
@@ -106,9 +96,8 @@ export default function NewCustomerForm({ user }) {
             </div>
             <SubmitButton
                 isLoading={loading}
-                buttonTitle="Author"
-                loadingButtonTitle="Creating author please wait ..." />
+                buttonTitle="Update Customer"
+                loadingButtonTitle="Updating customer, please wait ..." />
         </form>
-
     )
 }

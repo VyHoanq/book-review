@@ -10,6 +10,7 @@ export async function POST(request) {
             title,
             content,
             imageUrl,
+            bookImages,
             published,
             language,
             format,
@@ -41,13 +42,14 @@ export async function POST(request) {
                 slug,
                 title,
                 content,
-                imageUrl,
+                imageUrl:bookImages[0],
                 published,
                 language,
                 format,
                 isbn,
                 isActive,
                 authorName,
+                bookImages,
                 genres: {
                     connectOrCreate: genres.map(genre => ({
                         where: { name: genre }, // Kết nối hoặc tạo genre mới
@@ -85,7 +87,8 @@ export async function GET(request) {
                         userId: true, // Thông tin người dùng để kết nối
                         bookId: true
                     }
-                }
+                },
+                images:true
             },
             orderBy: {
                 createdAt: "desc"

@@ -60,6 +60,7 @@ model Book {
   title       String
   content     String?  @db.Text
   imageUrl    String
+  bookImages   String
   published   String
   language    String
   format      String
@@ -76,6 +77,7 @@ model Book {
   authorName      String
   Author          Author?   @relation(fields: [authorId_author], references: [id_author])
   authorId_author Int?
+  images          Image[]
 }
 
 model User {
@@ -97,10 +99,15 @@ model User {
 }
 
 model UserProfile {
-  id          Int      @id @default(autoincrement())
-  userId      Int      @unique
-  dateOfBirth DateTime
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id              Int      @id @default(autoincrement())
+  userId          Int      @unique
+  name            String?
+  firstName       String?
+  lastName        String?
+  dateOfBirth     DateTime
+  profileImageUrl String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model Comment {
@@ -128,4 +135,11 @@ model Genre {
   id    Int    @id @default(autoincrement())
   name  String @unique
   books Book[] @relation("BookGenres")
+}
+
+model Image {
+  id     Int    @id @default(autoincrement())
+  url    String
+  book   Book   @relation(fields: [bookId], references: [id])
+  bookId Int
 }

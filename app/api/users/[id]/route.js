@@ -5,9 +5,13 @@ export async function GET(request, { params }) {
     try {
         const userId = parseInt(params.id);
 
-
         const user = await db.user.findUnique({
             where: { id: userId },
+            include: {
+                profile: true, // Bao gồm thông tin profile của người dùng
+                books: true,   // Bao gồm sách của người dùng
+                authors: true, // Bao gồm thông tin author nếu có
+            }
         });
 
         if (!user) {
@@ -33,7 +37,7 @@ export async function DELETE(request, { params }) {
         const existingUser = await db.user.findUnique({
             where: { id: userId }
         });
-        
+
         if (!existingUser) {
             return NextResponse.json({
                 data: null,
