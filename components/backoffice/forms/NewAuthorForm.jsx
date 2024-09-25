@@ -9,6 +9,8 @@ import ImageInput from '@/components/FormInputs/input/ImageInput'
 import { makePostRequest } from '@/lib/apiRequest'
 import { useRouter } from 'next/navigation'
 import ArrayItemsInput from '@/components/FormInputs/input/ArrayItemsInput'
+import { generateAuthor } from '@/lib/generateAuthor'
+
 
 export default function NewAuthorForm({ user }) {
     const [profileImageUrl, setProfileImageUrl] = useState("")
@@ -30,7 +32,8 @@ export default function NewAuthorForm({ user }) {
     }
 
     async function onSubmit(data) {
-
+        const slug = generateAuthor(data.name)
+        data.slug = slug
         data.profileImageUrl = profileImageUrl 
         data.book = book
         data.id_user = user.id

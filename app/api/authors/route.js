@@ -32,6 +32,7 @@ export async function POST(request) {
         const newAuthor = await db.author.create({
             data: {
                 name: authorData.name,
+                slug: authorData.slug,
                 biography: authorData.biography,
                 profileImageUrl: authorData.profileImageUrl || "",
                 isActive: authorData.isActive ?? true,

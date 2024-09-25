@@ -39,6 +39,7 @@ model Banner {
 model Author {
   id_author       Int      @id @unique @default(autoincrement())
   name            String?  @db.VarChar(255)
+  slug            String?  @unique @db.VarChar(255)
   biography       String?  @db.Text
   profileImageUrl String?  @db.VarChar(255)
   isActive        Boolean
@@ -60,7 +61,7 @@ model Book {
   title       String
   content     String?  @db.Text
   imageUrl    String
-  bookImages   String
+  bookImages  String
   published   String
   language    String
   format      String
