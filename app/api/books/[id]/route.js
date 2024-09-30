@@ -98,13 +98,13 @@ export async function PUT(request, { params: { id } }) {
 
         const updatedBook = await db.book.update({
             where: { id: bookId },
-           data: {
+            data: {
                 userId: data.userId,
                 id_category: data.id_category,
                 slug: data.slug,
                 title: data.title,
                 content: data.content,
-                imageUrl: data.imageUrl, 
+                imageUrl:data.imageUrl,
                 published: data.published,
                 language: data.language,
                 format: data.format,
@@ -116,16 +116,7 @@ export async function PUT(request, { params: { id } }) {
                 },
             }
         });
-        const newImages = data.bookImages.map(imageUrl => ({
-            url: imageUrl,
-            bookId: bookId
-        }));
-
-        if (newImages.length > 0) {
-            await db.image.createMany({
-                data: newImages,
-            });
-        }
+        
 
         return NextResponse.json(updatedBook);
     } catch (error) {

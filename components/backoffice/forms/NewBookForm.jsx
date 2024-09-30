@@ -7,6 +7,7 @@ import { makePostRequest, makePutRequest } from '@/lib/apiRequest'
 import { generateSlug } from '@/lib/generateSlug'
 import SubmitButton from '@/components/FormInputs/SubmitButton'
 import { TextInput, TextareaInput, SelectInput, ToggleInput, MultiImageInput, ArrayItemsInput } from '@/components/FormInputs/input';
+import ImageInput from '../../FormInputs/input/ImageInput'
 
 
 export default function NewBookForm({ categories, authors, updateData = {} }) {
@@ -15,8 +16,6 @@ export default function NewBookForm({ categories, authors, updateData = {} }) {
     const [imageUrl, setImageUrl] = useState(initialImageUrl)
     const [loading, setLoading] = useState(false)
     const [genres, setGenres] = useState([]);
-    const [bookImages, setBookImages] = useState([])
-    console.log(bookImages)
     const { register, reset, handleSubmit, formState: { errors }, watch } = useForm(
         {
             defaultValues: {
@@ -37,7 +36,7 @@ export default function NewBookForm({ categories, authors, updateData = {} }) {
     async function onSubmit(data) {
         const slug = generateSlug(data.title)
         data.slug = slug
-        data.bookImages = bookImages
+        data.imageUrl = imageUrl
         data.genres = genres
         if (id) {
             data.id = id
@@ -59,7 +58,7 @@ export default function NewBookForm({ categories, authors, updateData = {} }) {
                 reset,
                 redirect
             )
-            setBookImages([])
+            setImageUrl([])
         }
     }
 
@@ -118,11 +117,12 @@ export default function NewBookForm({ categories, authors, updateData = {} }) {
                     errors={errors}
                     className='w-full'
                 />
-                <MultiImageInput
-                    imageUrls={bookImages}
-                    setImageUrls={setBookImages}
-                    endpoint='multiBooksUploader'
-                    label="MultiBook Image"
+
+                <ImageInput
+                    imageUrl={imageUrl}
+                    setImageUrl={setImageUrl}
+                    endpoint='bookImageUploader'
+                    label="Thumbnail Image"
                 />
 
                 <ArrayItemsInput

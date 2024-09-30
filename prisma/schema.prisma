@@ -61,7 +61,6 @@ model Book {
   title       String
   content     String?  @db.Text
   imageUrl    String
-  bookImages  String
   published   String
   language    String
   format      String

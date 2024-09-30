@@ -5,7 +5,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export default async function SidebarCategories() {
-    const categories = await getData("categories") 
+    const categoriesData = await getData("categories")
+    //only categories with Books
+    const categories = categoriesData.filter((category) => category.books.length > 0)
+    console.log(categories)
     return (
         <div className='sm:col-span-3 bg-white rounded-lg text-slate-700 overflow-hidden hidden sm:block border border-gray-200 dark:bg-gray-700 dark:border-gray-700'>
             <h2 className='bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 dark:border-gray-600 py-3 px-6 font-semibold border-b 
